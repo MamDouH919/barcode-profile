@@ -1,0 +1,26 @@
+[
+    {
+        "id": "facebook",
+        "link": "https://www.facebook.com/m.mountain.agency",
+        "img": "./imgs/Facebook.png",
+        "name": "Mountain Marketing Agency"
+    },
+    {
+        "id": "instagram",
+        "link": "",
+        "img": "./imgs/Instagram.png",
+        "name": "Mountain Marketing Agency"
+    },
+    {
+        "id": "whatsapp",
+        "link": "",
+        "img": "./imgs/whatsapp.png",
+        "name": "Mountain Marketing Agency"
+    },
+    {
+        "id": "tiktok",
+        "link": "",
+        "img": "./imgs/tiktok.png",
+        "name": "Mountain Marketing Agency"
+    }
+]

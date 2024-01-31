@@ -1,0 +1,18 @@
+{
+    "app": {
+        "basePath": "/",
+        "siteTitle": "Accurate | Fastest Courier Service"
+    },
+    "theme": {
+        "primaryColorDark": "#000",
+        "primaryColorLight": "#000"
+    },
+    "socialLinks": {
+        "facebook": "#",
+        "messenger": "#",
+        "whatsapp": "#",
+        "linkedIn": "#",
+        "instgram": "#",
+        "youtube": "#"
+    }
+}
