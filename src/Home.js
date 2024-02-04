@@ -143,6 +143,7 @@ function Home() {
                                     </Stack>
                                     <Stack sx={{ minWidth: 0 }}>
                                         <Typography noWrap>+201060168136</Typography>
+                                        <Typography noWrap>+201060168136</Typography>
                                     </Stack>
                                 </Stack>
                                 <Stack spacing={2} direction="row" alignItems="center" sx={{ my: "8px !important" }}>
