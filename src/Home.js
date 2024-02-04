@@ -24,7 +24,6 @@ const Root = styled('div')((
     height: "100%",
     // backgroundImage: 'url(./imgs/profile.jpg)',
     [`& .${classes.leftWrapper}`]: {
-        backgroundImage: 'url(./imgs/profile.jpg)',
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "100%",
@@ -60,7 +59,7 @@ const Root = styled('div')((
         width: "250px",
         height: "250px",
         borderRadius: "50%",
-        background: "#fafafa",
+        // background: "#fafafa",
         overflow: "hidden",
         [theme.breakpoints.down('md')]: {
             margin: theme.spacing(1, 1),
@@ -68,7 +67,7 @@ const Root = styled('div')((
         "&:before": {
             content: "''",
             position: "absolute",
-            inset: "-20px 0px",
+            inset: "-10px 70px",
             background: `linear-gradient(315deg,${theme.palette.primary.main},#d4d2d3)`,
             transition: "0.5s",
             animation: "animate 4s linear infinite",
@@ -76,8 +75,8 @@ const Root = styled('div')((
         "&:after": {
             content: "''",
             position: "absolute",
-            inset: "2px",
-            background: "white",
+            inset: "4px",
+            // background: "white",
             borderRadius: "50%",
             zIndex: 1
         },
@@ -127,12 +126,11 @@ function Home() {
         <Root>
             <Grid container width={"100%"} height={"100%"}>
                 <Grid xs={12} md={6} position={"relative"}>
-                    <Box className={classes.leftWrapper}>
+                    <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require('./imgs/profile.jpg')})`, }}>
                         <div className={classes.content}>
-
                             <Box className={classes.item}>
                                 <Box className={classes.contentImg}>
-                                    <img src='./imgs/profile.jpg' alt='profile' />
+                                    <img src={require('./imgs/profile.jpg')} alt='profile' />
                                 </Box>
                             </Box>
                             <Typography variant='h3' my={2} textAlign={"center"}>Mountain Marketing Agency</Typography>
@@ -144,7 +142,7 @@ function Home() {
                                         </Avatar>
                                     </Stack>
                                     <Stack sx={{ minWidth: 0 }}>
-                                        <Typography noWrap>+201142100519</Typography>
+                                        <Typography noWrap>+201060168136</Typography>
                                     </Stack>
                                 </Stack>
                                 <Stack spacing={2} direction="row" alignItems="center" sx={{ my: "8px !important" }}>
@@ -164,9 +162,26 @@ function Home() {
                 <Grid xs={12} md={6}>
                     <div className={classes.content}>
                         <Typography variant='h3' mb={2}>Social Media</Typography>
-                        {social.map((e) =>
-                            <ZeroWidthStack key={e.id} element={e} />
-                        )}
+                        <ZeroWidthStack
+                            link={"jkdfsj"}
+                            icon={"facebook"}
+                            name={"Mountain Marketing Agency"}
+                        />
+                        <ZeroWidthStack
+                            link={"jkdfsj"}
+                            icon={"facebook"}
+                            name={"Mountain Marketing Agency"}
+                        />
+                        <ZeroWidthStack
+                            link={"jkdfsj"}
+                            icon={"facebook"}
+                            name={"Mountain Marketing Agency"}
+                        />
+                        <ZeroWidthStack
+                            link={"jkdfsj"}
+                            icon={"facebook"}
+                            name={"Mountain Marketing Agency"}
+                        />
                     </div>
                 </Grid>
 

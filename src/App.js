@@ -4,6 +4,14 @@ import config from './config.json'
 import * as color from "@mui/material/colors";
 import Home from './Home';
 import './App.css'
+import {
+  Route,
+  Routes
+} from "react-router-dom";
+
+import NotFound from './NotFound';
+import Clients from './Clients';
+import ArabClinic from './Clients/ArabClinic';
 
 export default function App() {
   const darkMode = true
@@ -91,16 +99,32 @@ export default function App() {
       // secondary: { main: color.blue[400] }
     },
     typography: {
-      fontFamily: ['"Cairo"', "sans-serif"].join(","),
+      fontFamily: [
+        '-apple-system',
+        'BlinkMacSystemFont',
+        '"Segoe UI"',
+        'Roboto',
+        '"Helvetica Neue"',
+        'Arial',
+        'sans-serif',
+        '"Apple Color Emoji"',
+        '"Segoe UI Emoji"',
+        '"Segoe UI Symbol"',
+      ].join(','),
       fontSize: 12.5,
     },
   });
+
   return (
     <ThemeProvider
       theme={theme}
     >
       <CssBaseline />
-      <Home />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/arab-clinic" element={<ArabClinic />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </ThemeProvider>
   )
 }

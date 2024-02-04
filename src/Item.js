@@ -1,9 +1,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { Avatar } from '@mui/material';
 
 const Item = styled("a")(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -18,22 +19,29 @@ const Item = styled("a")(({ theme }) => ({
     borderRadius: "8px",
 }));
 
+const Icons = {
+    facebook: <FaFacebookF />,
+    instagram: <FaInstagram />,
+    whatsApp: <FaWhatsapp />,
+    tikTok: <FaTiktok />,
+}
+
 export default function ZeroWidthStack(props) {
-    const { element } = props
+    const { link, icon, name } = props
     return (
-        <Box sx={{ overflow: 'hidden' }}>
+        <Box >
             <Item
-                href={element.link}
+                href={link}
                 target="_blank"
             >
                 <Stack spacing={2} direction="row" alignItems="center">
                     <Stack>
-                        {/* <Avatar> */}
-                        <img src={element.img} alt={element.id} height={50} width={50} />
-                        {/* </Avatar> */}
+                        <Avatar sx={{ width: 30, height: 30, background: "white" }}>
+                            {Icons[icon]}
+                        </Avatar>
                     </Stack>
                     <Stack sx={{ minWidth: 0 }}>
-                        <Typography noWrap>{element.name}</Typography>
+                        <Typography color={"text.primary"} noWrap>{name}</Typography>
                     </Stack>
                 </Stack>
             </Item>

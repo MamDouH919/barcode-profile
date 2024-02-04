@@ -1,0 +1,46 @@
+{
+    "arab-clinic": {
+        "name": "arab clinic",
+        "color": "#6999d5",
+        "image": "arabprof.jpg",
+        "tikTok": {
+            "type": "tikTok",
+            "link": ""
+        },
+        "facebook": {
+            "name": "Arab Clinic Hospital - مستشفي أراب كلينيك",
+            "link": "https://www.facebook.com/ArabClinicEG?mibextid=LQQJ4d"
+        },
+        "instagram": {
+            "name": "Arab Clinic Hospital - مستشفي أراب كلينيك",
+            "link": "https://www.instagram.com/arabcliniceg?igsh=MWg2MzJsN3JnaDRz&utm_source=qr"
+        },
+        "email": "",
+        "branches": [
+            {
+                "branchName": "شبين",
+                "phone": "01550141552",
+                "location": "https://www.google.com/maps?q=30.311933517456055,31.313459396362305&z=17&hl=en",
+                "whatsApp": "01550141552"
+            },
+            {
+                "branchName": "ابوزعبل",
+                "phone": "01022683220",
+                "location": "https://www.google.com/maps?q=%D9%85%D8%B1%D9%83%D8%B2+%D8%B9%D8%B1%D8%A8+%D9%83%D9%84%D9%8A%D9%86%D9%83+Arab+Cinic+%D8%AF.%D8%A3%D8%AD%D9%85%D8%AF+%D9%86%D8%A7%D8%B5%D8%B1%D8%8C+%D8%A3%D8%A8%D9%88+%D8%B2%D8%B9%D8%A8%D9%84%D8%8C+%D8%A7%D9%84%D8%AE%D8%A7%D9%86%D9%83%D8%A9%D8%8C+%D8%A3%D8%A8%D9%88%D8%B2%D8%B9%D8%A8%D9%84,+Al-Qalyubia+Governorate&ftid=0x1458132c423f2e4d:0xd769a6a26e7837c4&entry=gps&lucs=,94207360,47071704,47069508,47084304,94206604&g_st=iw",
+                "whatsApp": "01022683220"
+            },
+            {
+                "branchName": "العبور",
+                "phone": "01000380234",
+                "location": "https://www.google.com/maps/place/30%C2%B014'03.4%22N+31%C2%B028'05.0%22E/@30.2342644,31.4654846,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.2342644!4d31.4680595?hl=en&entry=ttu",
+                "whatsApp": "01000380234"
+            },
+            {
+                "branchName": "ميت غمر",
+                "phone": "01060094332",
+                "location": "https://www.google.com/maps/place/P7C4%2B255+Arab+clinic+-+%D8%A3%D8%B1%D8%A7%D8%A8+%D9%83%D9%84%D9%8A%D9%86%D9%83,+El-Gaish,+Madinet+Mit+Ghamr+(Include+Daqados),+Mit+Ghamr,+Dakahlia+Governorate+7511324%E2%80%AD/data=!4m2!3m1!1s0x14f7c14c5374a34f:0xee7c1acbd66cfd01?utm_source=mstt_1&entry=gps&lucs=,94206287,47075915&g_ep=CAESCjExLjExMi4xMDIYACDXggMqEiw5NDIwNjI4Nyw0NzA3NTkxNUICRUc%3D",
+                "whatsApp": "01060094332"
+            }
+        ]
+    }
+}
