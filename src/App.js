@@ -121,7 +121,7 @@ export default function App() {
     >
       <CssBaseline />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route exact path="/" element={<Home />} />
         <Route path="/arab-clinic" element={<ArabClinic />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
