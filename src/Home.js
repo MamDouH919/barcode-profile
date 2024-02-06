@@ -6,6 +6,7 @@ import ZeroWidthStack from './Item';
 import social from './social.json'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
+import { Link } from 'react-router-dom';
 const PREFIX = 'Home';
 
 const classes = {
@@ -124,6 +125,7 @@ const Root = styled('div')((
 function Home() {
     return (
         <Root>
+            <Link to={"/arab-clinic"}>new route</Link>
             <Grid container width={"100%"} height={"100%"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require('./imgs/profile.jpg')})`, }}>
