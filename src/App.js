@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 
 import NotFound from './NotFound';
-import Clients from './Clients';
 import ArabClinic from './Clients/ArabClinic';
 
 export default function App() {

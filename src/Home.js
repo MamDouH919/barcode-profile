@@ -125,7 +125,6 @@ const Root = styled('div')((
 function Home() {
     return (
         <Root>
-            <Link to={"/arab-clinic"}>new route</Link>
             <Grid container width={"100%"} height={"100%"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require('./imgs/profile.jpg')})`, }}>
@@ -165,11 +164,7 @@ function Home() {
                 <Grid xs={12} md={6}>
                     <div className={classes.content}>
                         <Typography variant='h3' mb={2}>Social Media</Typography>
-                        <ZeroWidthStack
-                            link={"jkdfsj"}
-                            icon={"facebook"}
-                            name={"Mountain Marketing Agency"}
-                        />
+                        {/* {social.ma} */}
                         <ZeroWidthStack
                             link={"jkdfsj"}
                             icon={"facebook"}
