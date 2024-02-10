@@ -7,6 +7,9 @@ import social from './social.json'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-router-dom';
+
+import QRCode from "react-qr-code";
+
 const PREFIX = 'Home';
 
 const classes = {
@@ -182,6 +185,8 @@ function Home() {
                         />
                     </div>
                 </Grid>
+
+                <QRCode value="http://qr.mountain-egy.site/arab-clinic" style={{ height: "100%" }} />
 
             </Grid>
         </Root>
