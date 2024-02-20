@@ -9,6 +9,8 @@ import EmailIcon from '@mui/icons-material/Email';
 import { Link } from 'react-router-dom';
 
 import QRCode from "react-qr-code";
+import { FaWhatsapp } from 'react-icons/fa';
+import { LocationOn } from '@mui/icons-material';
 
 const PREFIX = 'Home';
 
@@ -138,27 +140,26 @@ function Home() {
                                 </Box>
                             </Box>
                             <Typography variant='h3' my={2} textAlign={"center"}>Mountain Marketing Agency</Typography>
-                            <Stack spacing={2} direction="row" alignItems="center" flexWrap={"wrap"} justifyContent={"center"}>
-                                <Stack spacing={2} direction="row" alignItems="center" sx={{ my: "8px !important" }}>
-                                    <Stack>
-                                        <Avatar>
+                            <Stack direction={"row"} spacing={2}>
+                                <Stack alignItems={"center"}>
+                                    <a target='_blank' href={`https://wa.me/+201060168136`} rel="noreferrer">
+                                        <Avatar sx={{ width: 30, height: 30, background: "white" }}>
+                                            <FaWhatsapp />
+                                        </Avatar>
+                                    </a>
+                                    <Typography color={"text.primary"}>
+                                        WhatsApp
+                                    </Typography>
+                                </Stack>
+                                <Stack alignItems={"center"}>
+                                    <a target='_blank' href={`tel:+201060168136`} rel="noreferrer">
+                                        <Avatar sx={{ width: 30, height: 30, background: "white" }}>
                                             <LocalPhoneIcon />
                                         </Avatar>
-                                    </Stack>
-                                    <Stack sx={{ minWidth: 0 }}>
-                                        <Typography noWrap>+201060168136</Typography>
-                                        <Typography noWrap>+201060168136</Typography>
-                                    </Stack>
-                                </Stack>
-                                <Stack spacing={2} direction="row" alignItems="center" sx={{ my: "8px !important" }}>
-                                    <Stack>
-                                        <Avatar>
-                                            <EmailIcon />
-                                        </Avatar>
-                                    </Stack>
-                                    <Stack sx={{ minWidth: 0 }}>
-                                        <Typography noWrap>mohammed@gmail.com</Typography>
-                                    </Stack>
+                                    </a>
+                                    <Typography color={"text.primary"}>
+                                        Mobile
+                                    </Typography>
                                 </Stack>
                             </Stack>
                         </div>
@@ -167,26 +168,20 @@ function Home() {
                 <Grid xs={12} md={6}>
                     <div className={classes.content}>
                         <Typography variant='h3' mb={2}>Social Media</Typography>
-                        {/* {social.ma} */}
-                        <ZeroWidthStack
-                            link={"jkdfsj"}
-                            icon={"facebook"}
-                            name={"Mountain Marketing Agency"}
-                        />
-                        <ZeroWidthStack
-                            link={"jkdfsj"}
-                            icon={"facebook"}
-                            name={"Mountain Marketing Agency"}
-                        />
-                        <ZeroWidthStack
-                            link={"jkdfsj"}
-                            icon={"facebook"}
-                            name={"Mountain Marketing Agency"}
-                        />
+                        {social.map((e, i) =>
+                            e.link && <ZeroWidthStack
+                                key={i}
+                                link={e.link}
+                                icon={e.id}
+                                name={e.name}
+                            />
+                        )}
                     </div>
                 </Grid>
 
-                <QRCode value="http://qr.mountain-egy.site/arab-clinic" style={{ height: "100%" }} />
+                {/* <Box sx={{ width: "100%", height: "500px", background: "#fff" ,padding:"10px",textAlign:"center"}}>
+                    <QRCode value="https://qr.mountain-egy.site/arab-clinic" style={{ height: "100%" }} />
+                </Box> */}
 
             </Grid>
         </Root>
