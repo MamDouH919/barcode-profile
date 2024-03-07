@@ -151,7 +151,7 @@ function JeepCity() {
                         </div>
                     </Box>
                 </Grid>
-                <Grid xs={12} md={6} bgcolor={"#6999d5"}>
+                <Grid xs={12} md={6} bgcolor={`${client.color}`}>
                     <div className={classes.content}>
                         <Stack mb={2}>
                             <Typography variant='h3'>Social Media</Typography>
