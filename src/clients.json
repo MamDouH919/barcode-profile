@@ -42,5 +42,31 @@
                 "whatsApp": "+201060094332"
             }
         ]
+    },
+    "jeep-city": {
+        "name": "jeep city",
+        "color": "#664f06",
+        "image": "jeep.jpg",
+        "tikTok": {
+            "type": "tikTok",
+            "link": ""
+        },
+        "facebook": {
+            "name": "Jeep City- El Tantawy USA",
+            "link": "https://www.facebook.com/jeepcityegy"
+        },
+        "instagram": {
+            "name": "Jeep City - El Tantawy USA",
+            "link": "https://www.instagram.com/jeepcity_eltantawyusa?igsh=YWR3dzc0NWI5czgx"
+        },
+        "email": "",
+        "branches": [
+            {
+                "branchName": "القاهرة الجديدة - مدينة الرحاب - السوق الشرقى",
+                "phone": "",
+                "location": "https://maps.app.goo.gl/xy6s9dMikWH35srh7",
+                "whatsApp": ""
+            }
+        ]
     }
 }

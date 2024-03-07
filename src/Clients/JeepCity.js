@@ -8,7 +8,7 @@ import ZeroWidthStack from '../Item';
 import { FaWhatsapp } from 'react-icons/fa';
 import { LocationOn } from '@mui/icons-material';
 import clients from '../clients.json';
-import image from '../imgs/arabprof.jpg'
+import image from '../imgs/jeep.jpg'
 import { useTheme } from "@mui/system";
 
 const PREFIX = 'Home';
@@ -127,9 +127,9 @@ const Root = styled('div')((
     },
 }));
 
-function ArabClinic() {
+function JeepCity() {
     const theme = useTheme()
-    const client = clients['arab-clinic']
+    const client = clients['jeep-city']
     return (
         <Root>
             <Grid container width={"100%"} height={"100%"}>
@@ -208,8 +208,8 @@ function ArabClinic() {
                 </Grid>
 
             </Grid>
-        </Root>
+        </Root >
     )
 }
 
-export default ArabClinic
+export default JeepCity

@@ -11,6 +11,7 @@ import {
 
 import NotFound from './NotFound';
 import ArabClinic from './Clients/ArabClinic';
+import JeepCity from './Clients/JeepCity';
 
 export default function App() {
   const darkMode = true
@@ -122,6 +123,7 @@ export default function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/arab-clinic" element={<ArabClinic />} />
+        <Route path="/jeep-city" element={<JeepCity />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>

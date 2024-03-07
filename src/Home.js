@@ -5,12 +5,7 @@ import { styled } from '@mui/material/styles';
 import ZeroWidthStack from './Item';
 import social from './social.json'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import EmailIcon from '@mui/icons-material/Email';
-import { Link } from 'react-router-dom';
-
-import QRCode from "react-qr-code";
 import { FaWhatsapp } from 'react-icons/fa';
-import { LocationOn } from '@mui/icons-material';
 
 const PREFIX = 'Home';
 
