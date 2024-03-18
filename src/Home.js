@@ -5,6 +5,8 @@ import { styled } from '@mui/material/styles';
 import ZeroWidthStack from './Item';
 import social from './social.json'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
+// import QRCode from "react-qr-code";
 import { FaWhatsapp } from 'react-icons/fa';
 
 const PREFIX = 'Home';
@@ -174,8 +176,8 @@ function Home() {
                     </div>
                 </Grid>
 
-                {/* <Box sx={{ width: "100%", height: "500px", background: "#fff" ,padding:"10px",textAlign:"center"}}>
-                    <QRCode value="https://qr.mountain-egy.site/arab-clinic" style={{ height: "100%" }} />
+                {/* <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
+                    <QRCode value="https://qr.mountain-egy.site/jeep-city" style={{ height: "100%" }} />
                 </Box> */}
 
             </Grid>
