@@ -1,4 +1,4 @@
-import { Avatar, Box, Stack, Typography, Button } from '@mui/material'
+import { Avatar, Box, Stack, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import React from 'react'
 import { styled } from '@mui/material/styles';
@@ -6,7 +6,7 @@ import { styled } from '@mui/material/styles';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ZeroWidthStack from '../Item';
 import { FaWhatsapp } from 'react-icons/fa';
-import { LocationOn, PhotoLibrary } from '@mui/icons-material';
+import { LocationOn } from '@mui/icons-material';
 import clients from '../clients.json';
 import image from '../imgs/bait-ward.jpg'
 import { useTheme } from "@mui/system";

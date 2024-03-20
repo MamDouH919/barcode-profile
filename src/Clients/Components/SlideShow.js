@@ -74,11 +74,11 @@ const images = [
     },
     {
         label: 'menu page 13',
-        imgPath: menu13,
+        imgPath: menu14,
     },
     {
         label: 'menu page 14',
-        imgPath: menu14,
+        imgPath: menu13,
     },
 
 
