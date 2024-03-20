@@ -1,4 +1,4 @@
-import { Avatar, Box, Stack, Typography } from '@mui/material'
+import { Avatar, Box, Stack, Typography, Button } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import React from 'react'
 import { styled } from '@mui/material/styles';
@@ -6,10 +6,12 @@ import { styled } from '@mui/material/styles';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import ZeroWidthStack from '../Item';
 import { FaWhatsapp } from 'react-icons/fa';
-import { LocationOn } from '@mui/icons-material';
+import { LocationOn, PhotoLibrary } from '@mui/icons-material';
 import clients from '../clients.json';
 import image from '../imgs/bait-ward.jpg'
 import { useTheme } from "@mui/system";
+import BaitWardDialog from './Components/BaitWardDialog';
+import ItemNoLink from './Components/Item';
 
 const PREFIX = 'Home';
 
@@ -130,8 +132,11 @@ const Root = styled('div')((
 function BaitWard() {
     const theme = useTheme()
     const client = clients['bait-ward']
+    const [open, setOpen] = React.useState(false);
+
     return (
         <Root>
+            {open && <BaitWardDialog open={open} setOpen={setOpen} />}
             <Grid container width={"100%"} height={"100%"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{}}>
@@ -166,6 +171,11 @@ function BaitWard() {
                             link={client.instagram.link}
                             icon={"instagram"}
                             name={client.instagram.name}
+                        />
+                        <ItemNoLink
+                            click={() => setOpen(true)}
+                            icon={"menu"}
+                            name={"مينو بيت ورد"}
                         />
                         {client.branches.map((e, i) =>
                             <Stack spacing={1} mt={2} alignItems={"center"} key={i}>
