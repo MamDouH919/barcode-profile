@@ -157,16 +157,16 @@ function ArabClinic() {
                             <Typography variant='h3'>Social Media</Typography>
                             <Box height={"2px"} width={"100%"} bgcolor={"#000"} />
                         </Stack>
-                        <ZeroWidthStack
+                        {client.facebook && <ZeroWidthStack
                             link={client.facebook.link}
                             icon={"facebook"}
                             name={client.facebook.name}
-                        />
-                        <ZeroWidthStack
+                        />}
+                        {client.instagram && <ZeroWidthStack
                             link={client.instagram.link}
                             icon={"instagram"}
                             name={client.instagram.name}
-                        />
+                        />}
                         {client.branches.map((e, i) =>
                             <Stack spacing={1} mt={2} alignItems={"center"} key={i}>
                                 <Typography variant='h6'>فرع {e.branchName}</Typography>

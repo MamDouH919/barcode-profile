@@ -5,6 +5,7 @@ import { styled } from '@mui/material/styles';
 import ZeroWidthStack from './Item';
 import social from './social.json'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import clients from './clients.json';
 
 // import QRCode from "react-qr-code";
 import { FaWhatsapp } from 'react-icons/fa';
@@ -125,9 +126,15 @@ const Root = styled('div')((
 }));
 
 function Home() {
+    let dataArray = Object.entries(clients).map(([key, value]) => {
+        return {
+            key: key,
+            image: value.image
+        };
+    });
     return (
         <Root>
-            <Grid container width={"100%"} height={"100%"}>
+            <Grid container width={"100%"} height={"100%"} borderBottom={(theme) => `1px solid ${theme.palette.divider}`}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require('./imgs/profile.jpg')})`, }}>
                         <div className={classes.content}>
@@ -175,12 +182,24 @@ function Home() {
                         )}
                     </div>
                 </Grid>
-
-                {/* <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
-                    <QRCode value="https://qr.mountain-egy.site/jeep-city" style={{ height: "100%" }} />
-                </Box> */}
-
             </Grid>
+            <Stack justifyContent={"center"} alignItems={"center"} spacing={2} mt={3}>
+                <Typography variant='h4'>Our Clients</Typography>
+                <Stack direction={"row"} useFlexGap spacing={3} flexWrap={"wrap"} justifyContent={"center"}>
+                    {dataArray.map((e) =>
+                        <a key={e.key} href={`./${e.key}`}>
+                            <Box className={classes.item} >
+                                <Box className={classes.contentImg}>
+                                    <img src={require(`./imgs/${e.image}`)} alt='profile' />
+                                </Box>
+                            </Box>
+                        </a>
+                    )}
+                </Stack>
+            </Stack>
+            {/* <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
+                <QRCode value="https://qr.mountain-egy.site/elshamy" style={{ height: "100%" }} />
+            </Box> */}
         </Root>
     )
 }

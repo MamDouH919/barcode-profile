@@ -162,16 +162,16 @@ function BaitWard() {
                             <Typography variant='h3'>Social Media</Typography>
                             <Box height={"2px"} width={"100%"} bgcolor={"#000"} />
                         </Stack>
-                        <ZeroWidthStack
+                        {client.facebook && <ZeroWidthStack
                             link={client.facebook.link}
                             icon={"facebook"}
                             name={client.facebook.name}
-                        />
-                        <ZeroWidthStack
+                        />}
+                        {client.instagram && <ZeroWidthStack
                             link={client.instagram.link}
                             icon={"instagram"}
                             name={client.instagram.name}
-                        />
+                        />}
                         <ItemNoLink
                             click={() => setOpen(true)}
                             icon={"menu"}
@@ -199,7 +199,7 @@ function BaitWard() {
                                                 </Avatar>
                                             </a>
                                             <Typography color={"text.primary"}>
-                                                Mobile
+                                                Mobile - {index + 1}
                                             </Typography>
                                         </Stack>
                                     )}
