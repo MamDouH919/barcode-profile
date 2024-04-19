@@ -6,6 +6,7 @@ import ZeroWidthStack from './Item';
 import social from './social.json'
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import clients from './clients.json';
+import otherClients from './otherClients.json';
 
 // import QRCode from "react-qr-code";
 import { FaWhatsapp } from 'react-icons/fa';
@@ -132,6 +133,7 @@ function Home() {
             image: value.image
         };
     });
+    console.log(dataArray);
     return (
         <Root>
             <Grid container width={"100%"} height={"100%"} borderBottom={(theme) => `1px solid ${theme.palette.divider}`}>
@@ -188,6 +190,15 @@ function Home() {
                 <Stack direction={"row"} useFlexGap spacing={3} flexWrap={"wrap"} justifyContent={"center"}>
                     {dataArray.map((e) =>
                         <a key={e.key} href={`./${e.key}`}>
+                            <Box className={classes.item} >
+                                <Box className={classes.contentImg}>
+                                    <img src={require(`./imgs/${e.image}`)} alt='profile' />
+                                </Box>
+                            </Box>
+                        </a>
+                    )}
+                    {otherClients.map((e, index) =>
+                        <a key={index} href={`${e.link}`} target='_blank' rel="noreferrer">
                             <Box className={classes.item} >
                                 <Box className={classes.contentImg}>
                                     <img src={require(`./imgs/${e.image}`)} alt='profile' />
