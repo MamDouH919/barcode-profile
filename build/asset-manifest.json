@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.b0d1168b.css",
-    "main.js": "/static/js/main.d6367e0c.js",
+    "main.js": "/static/js/main.e8f888cf.js",
     "static/js/787.3a212b26.chunk.js": "/static/js/787.3a212b26.chunk.js",
     "static/media/arabprof222.jpg": "/static/media/arabprof222.938c237963de42439783.jpg",
+    "static/media/abuZaid.jpg": "/static/media/abuZaid.808c34f53dc8a61d431e.jpg",
     "static/media/steakBurger.jpg": "/static/media/steakBurger.93842c1741176c9bdc2f.jpg",
     "static/media/iCare.jpg": "/static/media/iCare.1ed34ce35d47fca2ab0e.jpg",
     "static/media/lasheen.jpg": "/static/media/lasheen.be6b340113aebf8a47b6.jpg",
@@ -22,21 +23,26 @@
     "static/media/menu7.jpg": "/static/media/menu7.df04402f59d24689e4de.jpg",
     "static/media/menu2.jpg": "/static/media/menu2.e3f3e7aef8f7e4cbc65f.jpg",
     "static/media/menu10.jpg": "/static/media/menu10.483722bae80fbf0752b3.jpg",
+    "static/media/unaStella.jpg": "/static/media/unaStella.e870615ee8456f2fe03b.jpg",
     "static/media/menu13.jpg": "/static/media/menu13.c06d20df8aac9424e9d9.jpg",
     "static/media/menu12.jpg": "/static/media/menu12.b74232de516ac9ef65f6.jpg",
+    "static/media/smokeArts.jpg": "/static/media/smokeArts.d00dc49592504e2d9735.jpg",
     "static/media/arabprof.jpg": "/static/media/arabprof.b8925e0c5834f19a5ddc.jpg",
     "static/media/jeep.jpg": "/static/media/jeep.93aabd85e6e66a5e7ebc.jpg",
     "static/media/kidsCare.jpg": "/static/media/kidsCare.f408c38a3816529659b6.jpg",
     "static/media/elshamy.jpg": "/static/media/elshamy.875af834a5818ec1f346.jpg",
     "static/media/Facebook.png": "/static/media/Facebook.790642551cd99bb66a7e.png",
+    "static/media/warsha.jpg": "/static/media/warsha.f2b876c92f88c50ac2ba.jpg",
+    "static/media/akmEgypt.jpg": "/static/media/akmEgypt.c889dda2d6cb6556edb1.jpg",
+    "static/media/iSmile.jpg": "/static/media/iSmile.2c9fdcf2578f29b3b07b.jpg",
     "static/media/tiktok.png": "/static/media/tiktok.c8a8ce071e55201f5729.png",
     "index.html": "/index.html",
     "main.b0d1168b.css.map": "/static/css/main.b0d1168b.css.map",
-    "main.d6367e0c.js.map": "/static/js/main.d6367e0c.js.map",
+    "main.e8f888cf.js.map": "/static/js/main.e8f888cf.js.map",
     "787.3a212b26.chunk.js.map": "/static/js/787.3a212b26.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0d1168b.css",
-    "static/js/main.d6367e0c.js"
+    "static/js/main.e8f888cf.js"
   ]
 }

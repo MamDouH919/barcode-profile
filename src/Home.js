@@ -133,7 +133,7 @@ function Home() {
             image: value.image
         };
     });
-    console.log(dataArray);
+
     return (
         <Root>
             <Grid container width={"100%"} height={"100%"} borderBottom={(theme) => `1px solid ${theme.palette.divider}`}>
@@ -198,13 +198,18 @@ function Home() {
                         </a>
                     )}
                     {otherClients.map((e, index) =>
-                        <a key={index} href={`${e.link}`} target='_blank' rel="noreferrer">
+                        e.link ? <a key={index} href={`${e.link}`} target='_blank' rel="noreferrer">
                             <Box className={classes.item} >
                                 <Box className={classes.contentImg}>
                                     <img src={require(`./imgs/${e.image}`)} alt='profile' />
                                 </Box>
                             </Box>
-                        </a>
+                        </a> :
+                            <Box className={classes.item} key={index} >
+                                <Box className={classes.contentImg}>
+                                    <img src={require(`./imgs/${e.image}`)} alt='profile' />
+                                </Box>
+                            </Box>
                     )}
                 </Stack>
             </Stack>
