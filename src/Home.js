@@ -8,7 +8,7 @@ import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import clients from './clients.json';
 import otherClients from './otherClients.json';
 
-import QRCode from "react-qr-code";
+// import QRCode from "react-qr-code";
 import { FaWhatsapp } from 'react-icons/fa';
 import ProfileImage from './Clients/Components/ProfileImage';
 
@@ -134,9 +134,9 @@ function Home() {
                     )}
                 </Stack>
             </Stack>
-            <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
+            {/* <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
                 <QRCode value="https://qr.mountain-egy.site" style={{ height: "100%" }} />
-            </Box>
+            </Box> */}
         </Root>
     )
 }
