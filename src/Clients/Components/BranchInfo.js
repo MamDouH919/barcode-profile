@@ -8,8 +8,8 @@ const BranchInfo = props => {
     const { branch } = props
     return (
         <Stack spacing={1} mt={2} alignItems={"center"}>
-            <Typography variant='h6'>فرع {branch.branchName}</Typography>
-            <Stack direction={"row"} spacing={2}>
+            <Typography variant='h6' textAlign={"center"}>فرع {branch.branchName}</Typography>
+            <Stack direction={"row"} spacing={2} flexWrap={"wrap"} useFlexGap justifyContent={"center"}>
                 {branch.whatsApp && branch.whatsApp.map((element, index) =>
                     <Stack alignItems={"center"} key={index}>
                         <a target='_blank' href={`https://wa.me/${element}`} rel="noreferrer">
