@@ -18,27 +18,43 @@
         "branches": [
             {
                 "branchName": "شبين",
-                "phone": "+201550141552",
+                "phone": [
+                    "+201550141552"
+                ],
                 "location": "https://www.google.com/maps?q=30.311933517456055,31.313459396362305&z=17&hl=en",
-                "whatsApp": "+201550141552"
+                "whatsApp": [
+                    "+201550141552"
+                ]
             },
             {
                 "branchName": "ابوزعبل",
-                "phone": "+201022683220",
+                "phone": [
+                    "+201022683220"
+                ],
                 "location": "https://www.google.com/maps?q=%D9%85%D8%B1%D9%83%D8%B2+%D8%B9%D8%B1%D8%A8+%D9%83%D9%84%D9%8A%D9%86%D9%83+Arab+Cinic+%D8%AF.%D8%A3%D8%AD%D9%85%D8%AF+%D9%86%D8%A7%D8%B5%D8%B1%D8%8C+%D8%A3%D8%A8%D9%88+%D8%B2%D8%B9%D8%A8%D9%84%D8%8C+%D8%A7%D9%84%D8%AE%D8%A7%D9%86%D9%83%D8%A9%D8%8C+%D8%A3%D8%A8%D9%88%D8%B2%D8%B9%D8%A8%D9%84,+Al-Qalyubia+Governorate&ftid=0x1458132c423f2e4d:0xd769a6a26e7837c4&entry=gps&lucs=,94207360,47071704,47069508,47084304,94206604&g_st=iw",
-                "whatsApp": "+201022683220"
+                "whatsApp": [
+                    "+201022683220"
+                ]
             },
             {
                 "branchName": "العبور",
-                "phone": "+201000380234",
+                "phone": [
+                    "+201000380234"
+                ],
                 "location": "https://www.google.com/maps/place/30%C2%B014'03.4%22N+31%C2%B028'05.0%22E/@30.2342644,31.4654846,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.2342644!4d31.4680595?hl=en&entry=ttu",
-                "whatsApp": "+201000380234"
+                "whatsApp": [
+                    "+201000380234"
+                ]
             },
             {
                 "branchName": "ميت غمر",
-                "phone": "+201060094332",
+                "phone": [
+                    "+201060094332"
+                ],
                 "location": "https://www.google.com/maps/place/P7C4%2B255+Arab+clinic+-+%D8%A3%D8%B1%D8%A7%D8%A8+%D9%83%D9%84%D9%8A%D9%86%D9%83,+El-Gaish,+Madinet+Mit+Ghamr+(Include+Daqados),+Mit+Ghamr,+Dakahlia+Governorate+7511324%E2%80%AD/data=!4m2!3m1!1s0x14f7c14c5374a34f:0xee7c1acbd66cfd01?utm_source=mstt_1&entry=gps&lucs=,94206287,47075915&g_ep=CAESCjExLjExMi4xMDIYACDXggMqEiw5NDIwNjI4Nyw0NzA3NTkxNUICRUc%3D",
-                "whatsApp": "+201060094332"
+                "whatsApp": [
+                    "+201060094332"
+                ]
             }
         ]
     },
@@ -98,11 +114,52 @@
             {
                 "branchName": "أبو زعبل، الخانكة، محافظة القليوبية",
                 "phone": [
-                    "+01098282820",
-                    "+01110468015"
+                    "+201098282820",
+                    "+201110468015"
                 ],
                 "location": "https://maps.app.goo.gl/6tWhtttwsBf7pZQ76?g_st=iw",
-                "whatsApp": "+201098282820"
+                "whatsApp": [
+                    "+201098282820"
+                ]
+            }
+        ]
+    },
+    "i-Care": {
+        "name": "i-Care Dental Center",
+        "color": "#063054",
+        "image": "iCare.jpg",
+        "facebook": {
+            "name": "i-Care Dental Center",
+            "link": "https://www.facebook.com/profile.php?id=100088950264765&mibextid=YMEMSu"
+        },
+        "instagram": {
+            "name": "i-Care Dental Center",
+            "link": "https://www.instagram.com/icare.dentalclin/?igsh=NWJ2b2Z0dTNhMDkz&utm_source=qr"
+        },
+        "branches": [
+            {
+                "branchName": "بنها - محافظة القليوبية",
+                "phone": [
+                    "+201111484505",
+                    "+201014129297"
+                ],
+                "location": "https://www.google.com/maps/place/i+care+dental+center+-+%D9%85%D8%B1%D9%83%D8%B2+%D8%A2%D9%8A+%D9%83%D9%8A%D8%B1+%D9%84%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86%E2%80%AD/@30.4534004,31.1806184,15z/data=!4m6!3m5!1s0x145875c89157d2e7:0x5b166073a985d40a!8m2!3d30.4534004!4d31.1806184!16s%2Fg%2F11y49qh0c0?hl=en-GB&entry=ttu",
+                "whatsApp": [
+                    "+201111484505",
+                    "+201014129297"
+                ]
+            },
+            {
+                "branchName": "شبين القناطر - محافظة القليوبية",
+                "phone": [
+                    "+201029120120",
+                    "+201029120130"
+                ],
+                "location": "https://www.google.com/maps/place/%D9%85%D8%B1%D9%83%D8%B2+%D8%A2%D9%8A+%D9%83%D9%8A%D8%B1+%D9%84%D9%84%D8%A3%D8%B3%D9%86%D8%A7%D9%86+-+%D8%B4%D8%A8%D9%8A%D9%86+%D8%A7%D9%84%D9%82%D9%86%D8%A7%D8%B7%D8%B1%E2%80%AD/@30.318983,31.3078459,15z/data=!4m2!3m1!1s0x0:0x75d8ba366493af7f?sa=X&ved=1t:2428&hl=en-GB&ictx=111",
+                "whatsApp": [
+                    "+201029120120",
+                    "+201029120130"
+                ]
             }
         ]
     }

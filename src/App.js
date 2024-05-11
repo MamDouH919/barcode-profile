@@ -14,6 +14,7 @@ import ArabClinic from './Clients/ArabClinic';
 import JeepCity from './Clients/JeepCity';
 import BaitWard from './Clients/BaitWard';
 import Elshamy from './Clients/Elshamy';
+import ICare from './Clients/ICare';
 
 export default function App() {
   const darkMode = true
@@ -128,6 +129,7 @@ export default function App() {
         <Route path="/jeep-city" element={<JeepCity />} />
         <Route path="/bait-ward" element={<BaitWard />} />
         <Route path="/elshamy" element={<Elshamy />} />
+        <Route path="/i-Care" element={<ICare />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>
