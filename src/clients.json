@@ -162,5 +162,34 @@
                 ]
             }
         ]
+    },
+    "Fayek-Philip": {
+        "name": "Dr. Fayek Philip Khalil",
+        "color": "#0f3251",
+        "image": "Fayek-Philip.jpg",
+        "facebook": {
+            "name": "Dr. Fayek Philip Khalil",
+            "link": "https://www.facebook.com/Dr.FayekPhilipKhalil"
+        },
+        "instagram": {
+            "name": "Dr. Fayek Philip Khalil",
+            "link": "https://www.instagram.com/fayekphilip/?utm_source=qr"
+        },
+        "branches": [
+            {
+                "branchName": "عياده الزيتون 240 ترعه الجبل - امام كنتاكي و أسواق الباشا",
+                "phone": [
+                    "+201143464761"
+                ]
+            },
+            {
+                "branchName": "عياده فيصل 483 شارع فيصل - أول كوبري فيصل - بجوار برج الاطباء",
+                "phone": [
+                    "+201155529939",
+                    "+201144810813"
+                ],
+                "location": "https://www.google.com/maps/dir/30.4732116,31.182492/30.013967,31.201206/@30.0737475,31.1479678,12.54z/data=!4m4!4m3!1m1!4e1!1m0?entry=ttu"
+            }
+        ]
     }
 }

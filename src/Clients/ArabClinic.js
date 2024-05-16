@@ -8,6 +8,7 @@ import clients from '../clients.json';
 import image from '../imgs/arabprof.jpg'
 import ProfileImage from './Components/ProfileImage';
 import BranchInfo from './Components/BranchInfo';
+import PoweredBy from './Components/PoweredBy';
 
 const PREFIX = 'ArabClinic';
 
@@ -63,7 +64,7 @@ function ArabClinic() {
     const client = clients['arab-clinic']
     return (
         <Root>
-            <Grid container width={"100%"} height={"100%"}>
+            <Grid container width={"100%"} height={"calc(100% - 30px)"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{}}>
                         <div className={classes.content}>
@@ -95,6 +96,7 @@ function ArabClinic() {
                 </Grid>
 
             </Grid>
+            <PoweredBy />
         </Root>
     )
 }

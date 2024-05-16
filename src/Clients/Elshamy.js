@@ -5,9 +5,9 @@ import { styled } from '@mui/material/styles';
 import ZeroWidthStack from '../Item';
 import clients from '../clients.json';
 import image from '../imgs/elshamy.jpg'
-import BaitWardDialog from './Components/BaitWardDialog';
 import ProfileImage from './Components/ProfileImage';
 import BranchInfo from './Components/BranchInfo';
+import PoweredBy from './Components/PoweredBy';
 
 const PREFIX = 'Elshamy';
 
@@ -127,12 +127,10 @@ const Root = styled('div')((
 
 function Elshamy() {
     const client = clients['elshamy']
-    const [open, setOpen] = React.useState(false);
 
     return (
         <Root>
-            {open && <BaitWardDialog open={open} setOpen={setOpen} />}
-            <Grid container width={"100%"} height={"100%"}>
+            <Grid container width={"100%"} height={"calc(100% - 30px)"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{}}>
                         <div className={classes.content}>
@@ -162,8 +160,8 @@ function Elshamy() {
                         )}
                     </div>
                 </Grid>
-
             </Grid>
+            <PoweredBy />
         </Root >
     )
 }

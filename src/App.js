@@ -15,6 +15,7 @@ import JeepCity from './Clients/JeepCity';
 import BaitWard from './Clients/BaitWard';
 import Elshamy from './Clients/Elshamy';
 import ICare from './Clients/ICare';
+import FayekPhilip from './Clients/FayekPhilip';
 
 export default function App() {
   const darkMode = true
@@ -130,6 +131,7 @@ export default function App() {
         <Route path="/bait-ward" element={<BaitWard />} />
         <Route path="/elshamy" element={<Elshamy />} />
         <Route path="/i-Care" element={<ICare />} />
+        <Route path="/Fayek-Philip" element={<FayekPhilip />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>

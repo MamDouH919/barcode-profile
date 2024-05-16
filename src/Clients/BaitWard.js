@@ -10,6 +10,7 @@ import BaitWardDialog from './Components/BaitWardDialog';
 import ItemNoLink from './Components/Item';
 import ProfileImage from './Components/ProfileImage';
 import BranchInfo from './Components/BranchInfo';
+import PoweredBy from './Components/PoweredBy';
 
 const PREFIX = 'BaitWard';
 
@@ -68,7 +69,7 @@ function BaitWard() {
     return (
         <Root>
             {open && <BaitWardDialog open={open} setOpen={setOpen} />}
-            <Grid container width={"100%"} height={"100%"}>
+            <Grid container width={"100%"} height={"calc(100% - 30px)"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{}}>
                         <div className={classes.content}>
@@ -105,6 +106,7 @@ function BaitWard() {
                 </Grid>
 
             </Grid>
+            <PoweredBy />
         </Root >
     )
 }

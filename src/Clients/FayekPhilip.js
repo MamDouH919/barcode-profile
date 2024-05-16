@@ -4,12 +4,12 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import ZeroWidthStack from '../Item';
 import clients from '../clients.json';
-import image from '../imgs/jeep.jpg'
+import image from '../imgs/Fayek-Philip.jpg'
 import ProfileImage from './Components/ProfileImage';
 import BranchInfo from './Components/BranchInfo';
 import PoweredBy from './Components/PoweredBy';
 
-const PREFIX = 'JeepCity';
+const PREFIX = 'ICare';
 
 const classes = {
     leftWrapper: `${PREFIX}-leftWrapper`,
@@ -59,15 +59,15 @@ const Root = styled('div')((
     },
 }));
 
-function JeepCity() {
-    const client = clients['jeep-city']
+function FayekPhilip() {
+    const client = clients['Fayek-Philip']
     return (
         <Root>
             <Grid container width={"100%"} height={"calc(100% - 30px)"}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{}}>
                         <div className={classes.content}>
-                            <ProfileImage clientColor={client.color} img={image} />
+                            <ProfileImage clientColor={client.color} img={image} secondaryColor={"#ad2634"} />
                             <Typography variant='h3' my={2} textAlign={"center"} textTransform={"capitalize"}>{client.name}</Typography>
                         </div>
                     </Box>
@@ -93,11 +93,10 @@ function JeepCity() {
                         )}
                     </div>
                 </Grid>
-
             </Grid>
             <PoweredBy />
         </Root >
     )
 }
 
-export default JeepCity
+export default FayekPhilip
