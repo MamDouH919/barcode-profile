@@ -5,17 +5,19 @@ import * as color from "@mui/material/colors";
 import Home from './Home';
 import './App.css'
 import {
+  Outlet,
   Route,
   Routes
 } from "react-router-dom";
 
 import NotFound from './NotFound';
-import ArabClinic from './Clients/ArabClinic';
-import JeepCity from './Clients/JeepCity';
-import BaitWard from './Clients/BaitWard';
-import Elshamy from './Clients/Elshamy';
-import ICare from './Clients/ICare';
-import FayekPhilip from './Clients/FayekPhilip';
+// import ArabClinic from './Clients/ArabClinic';
+// import JeepCity from './Clients/JeepCity';
+// import BaitWard from './Clients/BaitWard';
+// import Elshamy from './Clients/Elshamy';
+// import ICare from './Clients/ICare';
+// import FayekPhilip from './Clients/FayekPhilip';
+import Clients from './Clients/Clients';
 
 export default function App() {
   const darkMode = true
@@ -125,13 +127,17 @@ export default function App() {
     >
       <CssBaseline />
       <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/arab-clinic" element={<ArabClinic />} />
-        <Route path="/jeep-city" element={<JeepCity />} />
+        <Route path="/" element={<Outlet></Outlet>}>
+          <Route index element={<Home />} />
+          <Route index path=":id" element={<Clients />} />
+        </Route>
+        {/* <Route exact path="/" element={<Home />} />
+        <Route path="/arab-clinic" element={<ArabClinic />} /> */}
+        {/* <Route path="/jeep-city" element={<JeepCity />} />
         <Route path="/bait-ward" element={<BaitWard />} />
         <Route path="/elshamy" element={<Elshamy />} />
         <Route path="/i-Care" element={<ICare />} />
-        <Route path="/Fayek-Philip" element={<FayekPhilip />} />
+        <Route path="/Fayek-Philip" element={<FayekPhilip />} /> */}
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>

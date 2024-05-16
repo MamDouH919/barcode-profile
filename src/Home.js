@@ -60,7 +60,8 @@ const Root = styled('div')((
     },
 }));
 
-function Home() {
+function Home(props) {
+    console.log(props)
     let dataArray = Object.entries(clients).map(([key, value]) => {
         return {
             key: key,

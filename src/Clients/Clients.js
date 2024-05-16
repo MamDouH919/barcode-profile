@@ -1,14 +1,17 @@
 import { Box, Stack, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
-import React from 'react'
+import React, { useState } from 'react'
 import { styled } from '@mui/material/styles';
 
 import ZeroWidthStack from '../Item';
 import clients from '../clients.json';
-import image from '../imgs/arabprof.jpg'
 import ProfileImage from './Components/ProfileImage';
 import BranchInfo from './Components/BranchInfo';
 import PoweredBy from './Components/PoweredBy';
+import { useParams } from 'react-router-dom';
+import NotFound from '../NotFound';
+import BaitWardDialog from './Components/BaitWardDialog';
+import ItemNoLink from './Components/Item';
 
 const PREFIX = 'ArabClinic';
 
@@ -18,20 +21,25 @@ const classes = {
     image: `${PREFIX}-image`,
     item: `${PREFIX}-item`,
     contentImg: `${PREFIX}-contentImg`,
+    qrCodeData: `${PREFIX}-qrCodeData`,
 };
 
-const Root = styled(Stack)((
+const Root = styled("div")((
     {
         theme
     }
 ) => ({
     // backgroundImage: 'url(./imgs/profile.jpg)',
+    display: "grid",
+    height: "100%",
+    [`& .${classes.qrCodeData}`]: {
+        gridRow: " 1 / 100"
+    },
     [`& .${classes.leftWrapper}`]: {
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
         height: "100%",
         position: "relative",
-        backgroundImage: `url(${image})`,
         [`&::before`]: {
             content: "''",
             height: "100%",
@@ -59,20 +67,27 @@ const Root = styled(Stack)((
     },
 }));
 
-function ArabClinic() {
-    const client = clients['arab-clinic']
+function Clients() {
+    const { id } = useParams()
+    const client = clients[id]
+
+    const [open, setOpen] = useState(false);
+
+    if (!client) return <NotFound />
+
     return (
         <Root>
-            <Grid container >
+            {open && id === "bait-ward" && <BaitWardDialog open={open} setOpen={setOpen} />}
+            <Grid container className={classes.qrCodeData}>
                 <Grid xs={12} md={6} position={"relative"}>
-                    <Box className={classes.leftWrapper} sx={{}}>
+                    <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require(`../imgs/${client.image}`)})`, }}>
                         <div className={classes.content}>
-                            <ProfileImage clientColor={client.color} img={image} />
+                            <ProfileImage clientColor={client.color} img={require(`../imgs/${client.image}`)} />
                             <Typography variant='h3' my={2} textAlign={"center"} textTransform={"capitalize"}>{client.name}</Typography>
                         </div>
                     </Box>
                 </Grid>
-                <Grid xs={12} md={6} bgcolor={"#6999d5"}>
+                <Grid xs={12} md={6} bgcolor={client.color}>
                     <div className={classes.content}>
                         <Stack mb={2}>
                             <Typography variant='h3'>Social Media</Typography>
@@ -88,6 +103,11 @@ function ArabClinic() {
                             icon={"instagram"}
                             name={client.instagram.name}
                         />}
+                        {id === "bait-ward" && <ItemNoLink
+                            click={() => setOpen(true)}
+                            icon={"menu"}
+                            name={"مينو بيت ورد"}
+                        />}
                         {client.branches.map((branch, i) =>
                             <BranchInfo branch={branch} key={i} />
                         )}
@@ -100,4 +120,4 @@ function ArabClinic() {
     )
 }
 
-export default ArabClinic
+export default Clients

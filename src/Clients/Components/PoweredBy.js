@@ -13,7 +13,7 @@ const Link = styled("a")(({ theme }) => ({
 
 const PoweredBy = () => {
     return (
-        <Box height={"30px"} textAlign={"center"} bgcolor={"white"}>
+        <Box textAlign={"center"} bgcolor={"white"}>
             <Typography variant='h5' color={"black"}>Powered By <Link target='_blank' rel="noreferrer" href={`./`}>Mountain</Link></Typography>
         </Box>
     )
