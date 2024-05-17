@@ -61,7 +61,6 @@ const Root = styled('div')((
 }));
 
 function Home(props) {
-    console.log(props)
     let dataArray = Object.entries(clients).map(([key, value]) => {
         return {
             key: key,
@@ -136,7 +135,7 @@ function Home(props) {
                 </Stack>
             </Stack>
             {/* <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
-                <QRCode value="https://qr.mountain-egy.site/i-Care" style={{ height: "100%" }} />
+                <QRCode value="http://localhost:3000/Fayek-Philip" style={{ height: "100%" }} />
             </Box> */}
         </Root>
     )
