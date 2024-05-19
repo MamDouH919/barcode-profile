@@ -103,6 +103,16 @@ function Clients() {
                             icon={"instagram"}
                             name={client.instagram.name}
                         />}
+                        {client.snapChat && <ZeroWidthStack
+                            link={client.snapChat.link}
+                            icon={"snapChat"}
+                            name={client.snapChat.name}
+                        />}
+                        {client.twitter && <ZeroWidthStack
+                            link={client.twitter.link}
+                            icon={"twitter"}
+                            name={client.twitter.name}
+                        />}
                         {id === "bait-ward" && <ItemNoLink
                             click={() => setOpen(true)}
                             icon={"menu"}

@@ -198,5 +198,37 @@
                 "location": "https://www.google.com/maps/dir/30.4732116,31.182492/30.013967,31.201206/@30.0737475,31.1479678,12.54z/data=!4m4!4m3!1m1!4e1!1m0?entry=ttu"
             }
         ]
+    },
+    "mersaal": {
+        "name": "mersaal",
+        "color": "#981c1e",
+        "image": "mersaal.jpeg",
+        "facebook": {
+            "name": "mersaal",
+            "link": "https://www.facebook.com/people/Mersaal/61559626291801/"
+        },
+        "instagram": {
+            "name": "mersaal",
+            "link": "https://www.instagram.com/mersaalsa/?igsh=MWVya3A1NmQ3Y2phbQ%3D%3D"
+        },
+        "snapChat": {
+            "name": "mersaal",
+            "link": "https://www.snapchat.com/add/mersaalsa?share_id=Zm7KGWsER8K7PxZEkrtp6Q&locale=en_EG"
+        },
+        "twitter": {
+            "name": "mersaal",
+            "link": "https://x.com/mersaalsa?s=21&t=x3R8IKafF7ng_BhEcp3K3A&mx=2"
+        },
+        "branches": [
+            {
+                "branchName": "As Saadah, Riyadh 14256، الرياض 14258، المملكة العربية السعودية",
+                "phone": [
+                    "+966552355830",
+                    "+966559902551",
+                    "+966552355830"
+                ],
+                "location": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%B1%D8%B3%D8%A7%D9%84+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9+%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/@24.6891447,46.8423064,15z/data=!4m6!3m5!1s0x3e2fa9006bbe5ea9:0x151025ce07162cd4!8m2!3d24.6891447!4d46.8423064!16s%2Fg%2F11vx42bsz5?hl=ar&entry=ttu"
+            }
+        ]
     }
 }
