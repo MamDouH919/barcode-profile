@@ -113,6 +113,11 @@ function Clients() {
                             icon={"twitter"}
                             name={client.twitter.name}
                         />}
+                        {client.tikTok && <ZeroWidthStack
+                            link={client.tikTok.link}
+                            icon={"tikTok"}
+                            name={client.tikTok.name}
+                        />}
                         {id === "bait-ward" && <ItemNoLink
                             click={() => setOpen(true)}
                             icon={"menu"}

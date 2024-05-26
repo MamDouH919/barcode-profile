@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.b0d1168b.css",
-    "main.js": "/static/js/main.bb0583e1.js",
+    "main.js": "/static/js/main.3612827d.js",
     "static/js/787.3a212b26.chunk.js": "/static/js/787.3a212b26.chunk.js",
     "static/media/arabprof222.jpg": "/static/media/arabprof222.938c237963de42439783.jpg",
     "static/media/abuZaid.jpg": "/static/media/abuZaid.808c34f53dc8a61d431e.jpg",
@@ -35,16 +35,17 @@
     "static/media/Facebook.png": "/static/media/Facebook.790642551cd99bb66a7e.png",
     "static/media/Fayek-Philip.jpg": "/static/media/Fayek-Philip.cd727d4f4755a0614f80.jpg",
     "static/media/warsha.jpg": "/static/media/warsha.f2b876c92f88c50ac2ba.jpg",
+    "static/media/neveen-ali.jpg": "/static/media/neveen-ali.2b2df567f15f07830a45.jpg",
     "static/media/akmEgypt.jpg": "/static/media/akmEgypt.c889dda2d6cb6556edb1.jpg",
     "static/media/iSmile.jpg": "/static/media/iSmile.2c9fdcf2578f29b3b07b.jpg",
     "static/media/tiktok.png": "/static/media/tiktok.c8a8ce071e55201f5729.png",
     "index.html": "/index.html",
     "main.b0d1168b.css.map": "/static/css/main.b0d1168b.css.map",
-    "main.bb0583e1.js.map": "/static/js/main.bb0583e1.js.map",
+    "main.3612827d.js.map": "/static/js/main.3612827d.js.map",
     "787.3a212b26.chunk.js.map": "/static/js/787.3a212b26.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0d1168b.css",
-    "static/js/main.bb0583e1.js"
+    "static/js/main.3612827d.js"
   ]
 }

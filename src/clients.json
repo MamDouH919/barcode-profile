@@ -3,10 +3,6 @@
         "name": "arab clinic",
         "color": "#6999d5",
         "image": "arabprof.jpg",
-        "tikTok": {
-            "type": "tikTok",
-            "link": ""
-        },
         "facebook": {
             "name": "Arab Clinic Hospital - مستشفي أراب كلينيك",
             "link": "https://www.facebook.com/ArabClinicEG?mibextid=LQQJ4d"
@@ -209,15 +205,15 @@
         },
         "instagram": {
             "name": "mersaal",
-            "link": "https://www.instagram.com/mersaalsa/?igsh=MWVya3A1NmQ3Y2phbQ%3D%3D"
+            "link": "https://www.instagram.com/mersaalsa"
         },
         "snapChat": {
             "name": "mersaal",
-            "link": "https://www.snapchat.com/add/mersaalsa?share_id=Zm7KGWsER8K7PxZEkrtp6Q&locale=en_EG"
+            "link": "https://www.snapchat.com/add/mersaalsa"
         },
         "twitter": {
             "name": "mersaal",
-            "link": "https://x.com/mersaalsa?s=21&t=x3R8IKafF7ng_BhEcp3K3A&mx=2"
+            "link": "https://x.com/mersaalsa"
         },
         "branches": [
             {
@@ -228,6 +224,32 @@
                     "+966552355830"
                 ],
                 "location": "https://www.google.com/maps/place/%D8%B4%D8%B1%D9%83%D8%A9+%D9%85%D8%B1%D8%B3%D8%A7%D9%84+%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9+%D9%84%D9%84%D9%85%D9%82%D8%A7%D9%88%D9%84%D8%A7%D8%AA+%D8%A7%D9%84%D8%B9%D8%A7%D9%85%D9%87%E2%80%AD/@24.6891447,46.8423064,15z/data=!4m6!3m5!1s0x3e2fa9006bbe5ea9:0x151025ce07162cd4!8m2!3d24.6891447!4d46.8423064!16s%2Fg%2F11vx42bsz5?hl=ar&entry=ttu"
+            }
+        ]
+    },
+    "neveen-ali": {
+        "name": "Dr. Neveen Ali",
+        "color": "#d39c01",
+        "image": "neveen-ali.jpg",
+        "instagram": {
+            "name": "Dr. Neveen Ali",
+            "link": "https://www.instagram.com/neveen.ali91"
+        },
+        "snapChat": {
+            "name": "Dr. Neveen Ali",
+            "link": "https://www.snapchat.com/add/neveen.ali91"
+        },
+        "tikTok": {
+            "name": "Dr. Neveen Ali",
+            "link": "https://www.tiktok.com/@neveen.ali91"
+        },
+        "branches": [
+            {
+                "branchName": "Al Marmar, Al Nadwa, Riyadh 14814, Saudi Arabia",
+                "phone": [
+                    "+966533097927"
+                ],
+                "location": "https://maps.app.goo.gl/fiextuvXJSWVNjD1A?g_st=iw"
             }
         ]
     }
