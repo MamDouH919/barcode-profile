@@ -3,9 +3,10 @@ import Box from '@mui/material/Box';
 import Stack from '@mui/material/Stack';
 import { styled } from '@mui/material/styles';
 import Typography from '@mui/material/Typography';
-import { FaFacebookF, FaInstagram, FaWhatsapp, FaTiktok, FaSnapchat } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaWhatsapp, FaTiktok, FaSnapchat, FaYoutube, FaPhone } from "react-icons/fa";
 import { Avatar } from '@mui/material';
 import { FaXTwitter } from 'react-icons/fa6';
+import { HiUserGroup } from 'react-icons/hi';
 
 const Item = styled("a")(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -27,12 +28,15 @@ const Icons = {
     tikTok: <FaTiktok />,
     snapChat: <FaSnapchat />,
     twitter: <FaXTwitter />,
+    youtube: <FaYoutube />,
+    phone: <FaPhone />,
+    group: <HiUserGroup />,
 }
 
 export default function ZeroWidthStack(props) {
     const { link, icon, name } = props
     return (
-        <Box >
+        <Box>
             <Item
                 href={link}
                 target="_blank"

@@ -255,5 +255,62 @@
                 "location": "https://maps.app.goo.gl/fiextuvXJSWVNjD1A?g_st=iw"
             }
         ]
+    },
+    "ALAKAD-Jellewery": {
+        "name": "دهب احمد العقاد",
+        "color": "#a79469",
+        "image": "ALAKAD-Jellewery.png",
+        "instagram": {
+            "name": "دهب احمد العقاد",
+            "link": "https://instagram.com/ahmed_elakkad12?igshid=YmMyMTA2M2Y="
+        },
+        "tikTok": {
+            "name": "دهب احمد العقاد",
+            "link": "http://www.tiktok.com/@elakkad_gold"
+        },
+        "facebook": {
+            "name": "دهب احمد العقاد",
+            "link": "https://www.facebook.com/alakadjewelry.eg/"
+        },
+        "youtube": {
+            "name": "دهب احمد العقاد",
+            "link": "https://youtu.be/4GtvgDZvJG0"
+        },
+        "whatsApp": {
+            "name": "01005410113",
+            "link": "+201005410113"
+        },
+        "phone": {
+            "name": "01005410113",
+            "link": "+201005410113"
+        },
+        "fbGroup": [
+            {
+                "name": "facebook group",
+                "link": "https://www.facebook.com/groups/270691773442988/?ref=share"
+            },
+            {
+                "name": "facebook group",
+                "link": "https://www.facebook.com/groups/2811310215865426/?ref=share_group_link"
+            },
+            {
+                "name": "facebook group",
+                "link": "https://www.facebook.com/groups/470168408132968/?ref=share_group_link"
+            }
+        ],
+        "branches": [
+            {
+                "branchName": "بنها الرئيسي",
+                "location": "https://maps.app.goo.gl/a9ghW7yrCFut2Gib7?g_st=ic"
+            },
+            {
+                "branchName": "كفر شكر",
+                "location": "https://maps.app.goo.gl/cFRtjGvtXdnVKj6s9?g_st=ic"
+            },
+            {
+                "branchName": "بركه السبع",
+                "location": "https://maps.app.goo.gl/iGa6C4X39GjBsWjz9?g_st=ic"
+            }
+        ]
     }
 }

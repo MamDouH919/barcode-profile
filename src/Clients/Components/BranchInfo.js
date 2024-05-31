@@ -7,7 +7,7 @@ import { LocalPhone, LocationOn } from '@mui/icons-material'
 const BranchInfo = props => {
     const { branch } = props
     return (
-        <Stack spacing={1} mt={2} alignItems={"center"}>
+        <Stack spacing={2} alignItems={"center"}>
             <Typography variant='h6' textAlign={"center"}>فرع {branch.branchName}</Typography>
             <Stack direction={"row"} spacing={2} flexWrap={"wrap"} useFlexGap justifyContent={"center"}>
                 {branch.whatsApp && branch.whatsApp.map((element, index) =>

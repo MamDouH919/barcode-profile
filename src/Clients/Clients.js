@@ -58,7 +58,7 @@ const Root = styled("div")((
         alignItems: "center",
         flexDirection: "column",
         position: "relative",
-        padding: theme.spacing(3, 0)
+        padding: theme.spacing(3, 2)
     },
     [`& .${classes.image}`]: {
         height: "250px",
@@ -90,39 +90,74 @@ function Clients() {
                 <Grid xs={12} md={6} bgcolor={client.color}>
                     <div className={classes.content}>
                         <Stack mb={2}>
-                            <Typography variant='h3'>Social Media</Typography>
-                            <Box height={"2px"} width={"100%"} bgcolor={"#000"} />
+                            <Typography variant='h4'>Social Media</Typography>
+                            <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
                         </Stack>
-                        {client.facebook && <ZeroWidthStack
-                            link={client.facebook.link}
-                            icon={"facebook"}
-                            name={client.facebook.name}
-                        />}
-                        {client.instagram && <ZeroWidthStack
-                            link={client.instagram.link}
-                            icon={"instagram"}
-                            name={client.instagram.name}
-                        />}
-                        {client.snapChat && <ZeroWidthStack
-                            link={client.snapChat.link}
-                            icon={"snapChat"}
-                            name={client.snapChat.name}
-                        />}
-                        {client.twitter && <ZeroWidthStack
-                            link={client.twitter.link}
-                            icon={"twitter"}
-                            name={client.twitter.name}
-                        />}
-                        {client.tikTok && <ZeroWidthStack
-                            link={client.tikTok.link}
-                            icon={"tikTok"}
-                            name={client.tikTok.name}
-                        />}
-                        {id === "bait-ward" && <ItemNoLink
-                            click={() => setOpen(true)}
-                            icon={"menu"}
-                            name={"مينو بيت ورد"}
-                        />}
+                        <Stack direction={"row"} spacing={2} flexWrap={"wrap"} justifyContent={"center"} useFlexGap>
+                            {client.facebook && <ZeroWidthStack
+                                link={client.facebook.link}
+                                icon={"facebook"}
+                                name={client.facebook.name}
+                            />}
+                            {client.instagram && <ZeroWidthStack
+                                link={client.instagram.link}
+                                icon={"instagram"}
+                                name={client.instagram.name}
+                            />}
+                            {client.snapChat && <ZeroWidthStack
+                                link={client.snapChat.link}
+                                icon={"snapChat"}
+                                name={client.snapChat.name}
+                            />}
+                            {client.twitter && <ZeroWidthStack
+                                link={client.twitter.link}
+                                icon={"twitter"}
+                                name={client.twitter.name}
+                            />}
+                            {client.tikTok && <ZeroWidthStack
+                                link={client.tikTok.link}
+                                icon={"tikTok"}
+                                name={client.tikTok.name}
+                            />}
+                            {client.youtube && <ZeroWidthStack
+                                link={client.youtube.link}
+                                icon={"youtube"}
+                                name={client.youtube.name}
+                            />}
+                            {client.fbGroup && client.fbGroup.map((item, index) =>
+                                <ZeroWidthStack
+                                    key={index}
+                                    link={item.link}
+                                    icon={"group"}
+                                    name={item.name}
+                                />
+                            )}
+                            {id === "bait-ward" && <ItemNoLink
+                                click={() => setOpen(true)}
+                                icon={"menu"}
+                                name={"مينو بيت ورد"}
+                            />}
+                        </Stack>
+                        {(client.phone || client.whatsApp) && <Stack mb={1} mt={1}>
+                            <Typography variant='h4'>Contact Us</Typography>
+                            <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
+                        </Stack>}
+                        <Stack direction={"row"} spacing={2} flexWrap={"wrap"} justifyContent={"center"} useFlexGap>
+                            {client.whatsApp && <ZeroWidthStack
+                                link={`https://wa.me/${client.whatsApp.link}`}
+                                icon={"whatsApp"}
+                                name={client.whatsApp.name}
+                            />}
+                            {client.phone && <ZeroWidthStack
+                                link={`tel:${client.phone.link}`}
+                                icon={"phone"}
+                                name={client.phone.name}
+                            />}
+                        </Stack>
+                        <Stack mb={1} mt={1}>
+                            <Typography variant='h4'>Our Branches</Typography>
+                            <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
+                        </Stack>
                         {client.branches.map((branch, i) =>
                             <BranchInfo branch={branch} key={i} />
                         )}
