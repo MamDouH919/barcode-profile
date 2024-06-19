@@ -73,7 +73,7 @@ function Clients() {
 
     const [open, setOpen] = useState(false);
 
-    if (!client) return <NotFound />
+    if (!client || client.disable) return <NotFound />
 
     return (
         <Root>

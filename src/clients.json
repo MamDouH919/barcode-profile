@@ -78,6 +78,7 @@
     "bait-ward": {
         "name": "bait ward",
         "color": "#785d28",
+        "disable": true,
         "image": "bait-ward.jpg",
         "facebook": {
             "name": "خيمة بيت ورد",
