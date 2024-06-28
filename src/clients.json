@@ -313,5 +313,49 @@
                 "location": "https://maps.app.goo.gl/iGa6C4X39GjBsWjz9?g_st=ic"
             }
         ]
+    },
+    "restaurant-menu": {
+        "name": "restaurant menu",
+        "color": "#f46700",
+        "image": "steak-burger.jpg",
+        "menuQr": true,
+        "facebook": {
+            "name": "Steakburger",
+            "link": "https://www.facebook.com/Steakburger1.ye"
+        },
+        "menu": [
+            {
+                "title": "all menu",
+                "images": [
+                    "steakBurger/page-1.png",
+                    "steakBurger/page-2.png",
+                    "steakBurger/page-3.png",
+                    "steakBurger/page-5.png",
+                    "steakBurger/page-4.png"
+                ]
+            }
+        ],
+        "branches": [
+            {
+                "branchName": "فرع نادي الوحدة",
+                "branchInfo": [
+                    {
+                        "type": "phone",
+                        "value": "+967771375555",
+                        "link": "tel:+967771375555"
+                    },
+                    {
+                        "type": "phone",
+                        "value": "+967771372222",
+                        "link": "tel:+967771372222"
+                    },
+                    {
+                        "type": "location",
+                        "value": "المدينة السكنية مبني نادي الوحدة",
+                        "link": "https://maps.app.goo.gl/w9RmhBkVz6BDfhqH7"
+                    }
+                ]
+            }
+        ]
     }
 }

@@ -135,7 +135,7 @@ function Home(props) {
                 </Stack>
             </Stack>
             {/* <Box sx={{ width: "100%", height: "500px", background: "#fff", padding: "10px", textAlign: "center" }}>
-                <QRCode value="https://qr.mountain-egy.site/mersaal" style={{ height: "100%" }} />
+                <QRCode value="https://qr.mountain-egy.site/alakad-jellewery" style={{ height: "100%" }} />
             </Box> */}
         </Root>
     )

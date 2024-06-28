@@ -105,18 +105,7 @@ export default function App() {
       // secondary: { main: color.blue[400] }
     },
     typography: {
-      fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'sans-serif',
-        '"Apple Color Emoji"',
-        '"Segoe UI Emoji"',
-        '"Segoe UI Symbol"',
-      ].join(','),
+      fontFamily: [`"Exo 2"`, "sans-serif"].join(','),
       fontSize: 12.5,
     },
   });

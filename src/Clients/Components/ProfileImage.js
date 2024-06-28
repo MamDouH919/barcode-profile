@@ -21,8 +21,6 @@ const Root = styled(Box)((
 ) => ({
     position: "relative",
     margin: theme.spacing(2, 4),
-    width: "250px",
-    height: "250px",
     borderRadius: "50%",
     // background: "#fafafa",
     overflow: "hidden",
@@ -87,7 +85,8 @@ const ProfileImage = props => {
     const {
         img,
         clientColor,
-        secondaryColor
+        secondaryColor,
+        size
     } = props
 
     const theme = useTheme()
@@ -98,6 +97,8 @@ const ProfileImage = props => {
                 ":before": {
                     background: `linear-gradient(315deg,${secondaryColor ? secondaryColor : theme.palette.primary.main},${clientColor})`,
                 },
+                width: size ?? "250px",
+                height: size ?? "250px",
             }}
         >
             <Box className={classes.contentImg}>

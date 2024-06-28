@@ -1,14 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.b0d1168b.css",
-    "main.js": "/static/js/main.491b38c8.js",
+    "main.css": "/static/css/main.c26f84ad.css",
+    "main.js": "/static/js/main.f356aa2c.js",
     "static/js/787.3a212b26.chunk.js": "/static/js/787.3a212b26.chunk.js",
     "static/media/arabprof222.jpg": "/static/media/arabprof222.938c237963de42439783.jpg",
     "static/media/abuZaid.jpg": "/static/media/abuZaid.808c34f53dc8a61d431e.jpg",
+    "static/media/steak-burger.jpg": "/static/media/steak-burger.93842c1741176c9bdc2f.jpg",
     "static/media/steakBurger.jpg": "/static/media/steakBurger.93842c1741176c9bdc2f.jpg",
+    "static/media/page-4.png": "/static/media/page-4.d09e08df9a7f79321715.png",
     "static/media/iCare.jpg": "/static/media/iCare.1ed34ce35d47fca2ab0e.jpg",
+    "static/media/page-2.png": "/static/media/page-2.7587e494fc6554095e80.png",
     "static/media/lasheen.jpg": "/static/media/lasheen.be6b340113aebf8a47b6.jpg",
     "static/media/ALAKAD-Jellewery.png": "/static/media/ALAKAD-Jellewery.9cc3f8accd30076c6af8.png",
+    "static/media/page-5.png": "/static/media/page-5.4398d739ef6333bbb174.png",
+    "static/media/page-3.png": "/static/media/page-3.a9387ee554ab9a6055cb.png",
+    "static/media/page-1.png": "/static/media/page-1.e28af9345b3096927b8f.png",
     "static/media/offRoad.jpg": "/static/media/offRoad.be7fea3615b77a0bb59d.jpg",
     "static/media/Instagram.png": "/static/media/Instagram.e197e3bfb93603d36407.png",
     "static/media/menu3.jpg": "/static/media/menu3.12e1980dfca3b70b8dbe.jpg",
@@ -42,12 +48,12 @@
     "static/media/iSmile.jpg": "/static/media/iSmile.2c9fdcf2578f29b3b07b.jpg",
     "static/media/tiktok.png": "/static/media/tiktok.c8a8ce071e55201f5729.png",
     "index.html": "/index.html",
-    "main.b0d1168b.css.map": "/static/css/main.b0d1168b.css.map",
-    "main.491b38c8.js.map": "/static/js/main.491b38c8.js.map",
+    "main.c26f84ad.css.map": "/static/css/main.c26f84ad.css.map",
+    "main.f356aa2c.js.map": "/static/js/main.f356aa2c.js.map",
     "787.3a212b26.chunk.js.map": "/static/js/787.3a212b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b0d1168b.css",
-    "static/js/main.491b38c8.js"
+    "static/css/main.c26f84ad.css",
+    "static/js/main.f356aa2c.js"
   ]
 }
