@@ -26,7 +26,6 @@ import {
 } from 'react-share';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
-import "./menu.css";
 
 const PREFIX = 'MenuQr';
 
@@ -373,6 +372,8 @@ const MenuQr = ({ client, id }) => {
                                                             </Stack>
                                                         </Stack>
                                                     </Paper>
+                                                    <div style={{ height: "100px" }}></div>
+
                                                 </Container>
                                             </TabPanel>
                                         )}
