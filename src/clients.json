@@ -314,18 +314,24 @@
             }
         ]
     },
-    "restaurant-menu": {
-        "name": "restaurant menu",
+    "steakburger": {
+        "key": "steakburger",
+        "name": "steak burger",
+        "hashtag": "#SteakBurger",
         "color": "#f46700",
+        "SecondColor": "#0e406b",
         "image": "steak-burger.jpg",
         "menuQr": true,
-        "facebook": {
-            "name": "Steakburger",
-            "link": "https://www.facebook.com/Steakburger1.ye"
-        },
+        "social": [
+            {
+                "type": "facebook",
+                "name": "Steakburger",
+                "link": "https://www.facebook.com/Steakburger1.ye"
+            }
+        ],
         "menu": [
             {
-                "title": "all menu",
+                "title": "كل الأصناف",
                 "images": [
                     "steakBurger/page-1.png",
                     "steakBurger/page-2.png",

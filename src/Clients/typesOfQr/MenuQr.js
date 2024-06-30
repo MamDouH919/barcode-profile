@@ -1,13 +1,32 @@
-import React from 'react'
-import { Avatar, Box, Container, Stack, Typography } from '@mui/material'
+import React, { useState } from 'react'
+import { Avatar, Box, Button, Container, Dialog, DialogContent, DialogTitle, Paper, Snackbar, Stack, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import ProfileImage from '../Components/ProfileImage';
-import { FaFacebookF } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Slider from '../Components/Slider';
 import InfoItem from '../Components/InfoItem';
+import RestaurantMenuIcon from '@mui/icons-material/RestaurantMenu';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
+import { Link } from 'react-router-dom';
+import {
+    FacebookIcon,
+    FacebookMessengerIcon,
+    FacebookMessengerShareButton,
+    FacebookShareButton,
+    TelegramIcon,
+    TelegramShareButton,
+
+    TwitterShareButton,
+    WhatsappIcon,
+    WhatsappShareButton,
+    XIcon
+} from 'react-share';
+import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+import "./menu.css";
 
 const PREFIX = 'MenuQr';
 
@@ -49,11 +68,11 @@ const Root = styled("div")((
         position: "relative",
         my: 2,
         padding: theme.spacing(2),
-        borderRadius: "20px"
+        borderRadius: "20px",
     },
 }));
 
-const StyledTabs = styled(({ color, ...props }) => (
+const StyledTabs = styled(({ color, subTab, ...props }) => (
     <Tabs
         {...props}
         sx={{
@@ -61,7 +80,7 @@ const StyledTabs = styled(({ color, ...props }) => (
         }}
         TabIndicatorProps={{ children: <span className="MuiTabs-indicatorSpan" /> }}
     />
-))(({ theme, color }) => ({
+))(({ theme, color, subTab }) => ({
     '& .MuiTabs-indicator': {
         display: 'flex',
         justifyContent: 'center',
@@ -70,27 +89,27 @@ const StyledTabs = styled(({ color, ...props }) => (
     '& .MuiTabs-indicatorSpan': {
         maxWidth: 40,
         width: '100%',
-        backgroundColor: "none",
+        backgroundColor: subTab ? color : "none",
     },
     '& .MuiTabs-flexContainer': {
         display: "block"
     },
 }));
 
-const StyledTab = styled(({ color, ...props }) => (
+const StyledTab = styled(({ color, subTab, ...props }) => (
     <Tab disableRipple {...props} />
-))(({ theme, color }) => ({
+))(({ theme, color, subTab }) => ({
     textTransform: 'none',
     fontWeight: "bolder",
     fontSize: theme.typography.pxToRem(20),
     marginRight: theme.spacing(1),
-    color: "black",
-    border: `2px solid black`,
-    borderRadius: "20px",
+    color: subTab ? "#c0bbbb" : "#767676d7",
+    border: subTab ? "none" : `2px solid #767676d7`,
+    borderRadius: "25px",
     '&.Mui-selected': {
-        color: color,
-        border: `2px solid ${color}`,
-        borderRadius: "20px"
+        color: subTab ? color : "#fff",
+        border: subTab ? "none" : `2px solid ${color}`,
+        background: subTab ? "none" : color
     },
     '&.Mui-focusVisible': {
         backgroundColor: theme.palette.primary.light,
@@ -117,6 +136,10 @@ function TabPanel(props) {
         </div>
     );
 }
+const Icons = {
+    facebook: <FaFacebookF color='white' fontSize={"larger"} />,
+    instagram: <FaInstagram color='white' fontSize={"larger"} />
+}
 
 const MenuQr = ({ client, id }) => {
     const [value, setValue] = React.useState(0);
@@ -138,22 +161,122 @@ const MenuQr = ({ client, id }) => {
         setMenuValue(newValue);
     };
 
+    const [open, setOpen] = useState(false);
+    const [snackbarOpen, setSnackbarOpen] = useState(false);
+
+    const handleClickOpen = () => {
+        setOpen(true);
+    };
+
+    const handleClose = () => {
+        setOpen(false);
+    };
+
+    const handleCloseSnackbar = () => {
+        setSnackbarOpen(false);
+    };
+
+
     return (
         <Root className={classes.leftWrapper}>
+            <Snackbar
+                open={snackbarOpen}
+                autoHideDuration={3000}
+                onClose={handleCloseSnackbar}
+                message="Url was copied!"
+            />
+
             <Stack alignItems={"center"} spacing={2} width={"100%"}>
                 <Box position={"relative"}>
                     <Stack spacing={2} className={classes.content}>
                         <ProfileImage size={"200px"} clientColor={client.color} img={require(`../../imgs/${client.image}`)} />
                         <Typography my={1} variant='h4' color={"black"} fontWeight={"bolder"} textAlign={"center"} textTransform={"capitalize"}>{client.name}</Typography>
                         <Stack direction={"row"} mt={2} spacing={2} useFlexGap>
-                            <Avatar sx={{ width: 30, height: 30, background: client.color }}>
-                                <FaFacebookF color='white' />
-                            </Avatar>
+                            {client.social.map((e, i) =>
+                                <Link to={e.link} key={i} target='_blank'>
+                                    <Avatar sx={{ width: 35, height: 35, background: client.SecondColor }}>
+                                        {Icons[e.type]}
+                                    </Avatar>
+                                </Link>
+                            )}
                         </Stack>
-                        <InfoItem color={client.color} action item={{
-                            type: "share",
-                            value: "share it with your friends"
-                        }} />
+                        <Dialog
+                            open={open}
+                            onClose={handleClose}
+                            aria-labelledby="alert-dialog-title"
+                            aria-describedby="alert-dialog-description"
+
+                        >
+                            <DialogTitle id="alert-dialog-title">
+                                {"Share it with your friends"}
+                            </DialogTitle>
+                            <DialogContent sx={{ background: "white", pt: "16px !important" }}>
+                                <Stack direction={"row"} spacing={2} flexWrap={"wrap"}>
+                                    <FacebookShareButton
+                                        url={`qr.mountain-egy.site/${client.key}`}
+                                        quote={'Dummy text!'}
+                                        hashtag={client.hashtag}
+                                    >
+                                        <FacebookIcon size={32} round />
+                                    </FacebookShareButton>
+                                    <FacebookMessengerShareButton
+                                        url={`qr.mountain-egy.site/${client.key}`}
+                                        quote={'Dummy text!'}
+                                        hashtag={client.hashtag}
+                                    >
+                                        <FacebookMessengerIcon size={32} round />
+                                    </FacebookMessengerShareButton>
+                                    <WhatsappShareButton
+                                        url={`qr.mountain-egy.site/${client.key}`}
+                                        quote={'Dummy text!'}
+                                        hashtag={client.hashtag}
+                                    >
+                                        <WhatsappIcon size={32} round />
+                                    </WhatsappShareButton>
+                                    <TwitterShareButton
+                                        url={`qr.mountain-egy.site/${client.key}`}
+                                        quote={'Dummy text!'}
+                                        hashtag={client.hashtag}
+                                    >
+                                        <XIcon size={32} round />
+                                    </TwitterShareButton>
+                                    <TelegramShareButton
+                                        url={`qr.mountain-egy.site/${client.key}`}
+                                        quote={'Dummy text!'}
+                                        hashtag={client.hashtag}
+                                    >
+                                        <TelegramIcon size={32} round />
+                                    </TelegramShareButton>
+                                    <CopyToClipboard text={`qr.mountain-egy.site/${client.key}`}>
+                                        <Button
+                                            onClick={() => {
+                                                setSnackbarOpen(true)
+                                            }}
+                                            sx={{
+                                                borderRadius: "50%",
+                                                minWidth: "32px",
+                                                width: "32px",
+                                                height: "32px",
+                                                p: 0,
+                                                '& span': {
+                                                    m: 0
+                                                }
+                                            }}
+                                            variant="outlined"
+                                            startIcon={<ContentCopyIcon />}
+                                        >
+
+                                        </Button>
+                                    </CopyToClipboard>
+                                </Stack>
+                            </DialogContent>
+                        </Dialog>
+                        <div onClick={handleClickOpen}>
+                            <InfoItem color={client.color} SecondColor={client.SecondColor} action item={{
+                                type: "share",
+                                value: "share it with your friends"
+                            }} />
+                        </div>
                     </Stack>
                 </Box>
                 <Stack alignItems={"center"} sx={{ position: "relative" }}>
@@ -183,6 +306,7 @@ const MenuQr = ({ client, id }) => {
                                         position: "relative"
                                     }} >
                                         <StyledTabs
+                                            subTab
                                             value={menuValue}
                                             onChange={handleChangeMenuValue}
                                             variant="scrollable"
@@ -191,7 +315,12 @@ const MenuQr = ({ client, id }) => {
                                             color={client.color}
                                         >
                                             {client.menu.map((tab, index) =>
-                                                <StyledTab label={tab.title} key={index} color={client.color} />
+                                                <StyledTab subTab label={
+                                                    <Stack direction={"row"} spacing={1}>
+                                                        <RestaurantMenuIcon fontSize='large' />
+                                                        <Typography fontSize={"20px"} fontWeight={"bolder"}>{tab.title}</Typography>
+                                                    </Stack>
+                                                } key={index} color={client.color} />
                                             )}
                                         </StyledTabs>
                                     </Box>
@@ -215,6 +344,7 @@ const MenuQr = ({ client, id }) => {
                                         position: "relative"
                                     }} >
                                         <StyledTabs
+                                            subTab
                                             value={infoValue}
                                             onChange={handleChangeInfoValue}
                                             variant="scrollable"
@@ -223,7 +353,12 @@ const MenuQr = ({ client, id }) => {
                                             color={client.color}
                                         >
                                             {client.branches.map((tab, index) =>
-                                                <StyledTab label={tab.branchName} key={index} color={client.color} />
+                                                <StyledTab label={
+                                                    <Stack direction={"row"} spacing={1}>
+                                                        <RestaurantIcon fontSize='large' />
+                                                        <Typography fontSize={"20px"} fontWeight={"bolder"}>{tab.branchName}</Typography>
+                                                    </Stack>
+                                                } key={index} color={client.color} subTab />
                                             )}
                                         </StyledTabs>
                                     </Box>
@@ -231,11 +366,13 @@ const MenuQr = ({ client, id }) => {
                                         {client.branches.map((branch, index) =>
                                             <TabPanel value={infoValue} key={index} index={index}>
                                                 <Container maxWidth={'lg'}>
-                                                    <Stack justifyContent={"center"} alignItems={"center"} >
-                                                        <Stack spacing={2} sx={{ border: `3px solid ${client.color}` }} className={classes.infoCard}>
-                                                            {branch.branchInfo.map((item, i) => <InfoItem key={i} color={client.color} item={item} />)}
+                                                    <Paper className={classes.infoCard} sx={{ background: "white" }} elevation={10} >
+                                                        <Stack justifyContent={"center"} alignItems={"center"} >
+                                                            <Stack spacing={2} >
+                                                                {branch.branchInfo.map((item, i) => <InfoItem key={i} color={client.color} SecondColor={client.SecondColor} item={item} />)}
+                                                            </Stack>
                                                         </Stack>
-                                                    </Stack>
+                                                    </Paper>
                                                 </Container>
                                             </TabPanel>
                                         )}
