@@ -363,5 +363,38 @@
                 ]
             }
         ]
+    },
+    "first-medical-clinic": {
+        "name": "First Medical Clinic",
+        "color": "#3298c8",
+        "image": "first-medical-clinic.jpg",
+        "instagram": {
+            "name": "First Medical Clinic",
+            "link": "https://www.instagram.com/first.medical.egypt"
+        },
+        "tikTok": {
+            "name": "First Medical Clinic",
+            "link": "https://www.tiktok.com/@first.medical.clinic?_t=8omzXJq9hru&_r=1"
+        },
+        "facebook": {
+            "name": "First Medical Clinic",
+            "link": "https://www.facebook.com/profile.php?id=61551746921563"
+        },
+        "snapChat":{
+            "name": "First Medical Clinic",
+            "link": "https://www.snapchat.com/add/first.medical?share_id=73L9uH0gSLc&locale=en-GB"
+        },
+        "branches": [
+            {
+                "branchName": "ابراج المعادي ستار برج 4أ كورنيش النيل القاهرة‏،‏محافظة القاهرة‏، ‏مصر",
+                "phone": [
+                    "+201119922299"
+                ],
+                "whatsApp": [
+                    "+201119922299"
+                ],
+                "location": "https://www.google.com/maps/dir//%D8%A8%D8%B1%D8%AC+%D9%A4%D8%A3,+Maadi+Star+Towers,+Corniche+nile+Maadi,+Al+Isaweyah,+Maadi,+Cairo+Governorate+11742%E2%80%AD/@29.9727132,31.1536405,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x145847214db38063:0x8c5b837a7f8b9a43!2m2!1d31.2360419!2d29.9727388?entry=ttu"
+            }
+        ]
     }
 }

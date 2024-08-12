@@ -86,7 +86,8 @@ const ProfileImage = props => {
         img,
         clientColor,
         secondaryColor,
-        size
+        size,
+        name
     } = props
 
     const theme = useTheme()
@@ -102,7 +103,7 @@ const ProfileImage = props => {
             }}
         >
             <Box className={classes.contentImg}>
-                <img src={img} alt='profile' />
+                <img src={img} alt={name} />
             </Box>
         </Root>
     )

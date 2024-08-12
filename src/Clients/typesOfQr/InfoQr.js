@@ -9,6 +9,7 @@ import BranchInfo from '../Components/BranchInfo';
 import PoweredBy from '../Components/PoweredBy';
 import BaitWardDialog from '../Components/BaitWardDialog';
 import ItemNoLink from '../Components/Item';
+import { Helmet } from 'react-helmet';
 
 const PREFIX = 'InfoQr';
 
@@ -69,13 +70,16 @@ const InfoQr = ({ client, id }) => {
 
     return (
         <Root>
+            <Helmet>
+                <title>Mountain | {client.name}</title>
+            </Helmet>
             {open && id === "bait-ward" && <BaitWardDialog open={open} setOpen={setOpen} />}
             <Grid container className={classes.qrCodeData}>
                 <Grid xs={12} md={6} position={"relative"}>
                     <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require(`../../imgs/${client.image}`)})`, }}>
                         <div className={classes.content}>
-                            <ProfileImage clientColor={client.color} img={require(`../../imgs/${client.image}`)} />
-                            <Typography variant='h3' my={2} textAlign={"center"} textTransform={"capitalize"}>{client.name}</Typography>
+                            <ProfileImage clientColor={client.color} img={require(`../../imgs/${client.image}`)} name={client.name} />
+                            <Typography variant='h1' fontSize={40} my={2} textAlign={"center"} textTransform={"capitalize"}>{client.name}</Typography>
                         </div>
                     </Box>
                 </Grid>
