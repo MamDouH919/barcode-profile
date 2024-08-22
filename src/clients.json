@@ -396,5 +396,30 @@
                 "location": "https://www.google.com/maps/dir//%D8%A8%D8%B1%D8%AC+%D9%A4%D8%A3,+Maadi+Star+Towers,+Corniche+nile+Maadi,+Al+Isaweyah,+Maadi,+Cairo+Governorate+11742%E2%80%AD/@29.9727132,31.1536405,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x145847214db38063:0x8c5b837a7f8b9a43!2m2!1d31.2360419!2d29.9727388?entry=ttu"
             }
         ]
+    },
+    "i-smile-dental": {
+        "name": "I Smile Dental clinics",
+        "color": "#11876f",
+        "image": "iSmile.jpg",
+        "instagram": {
+            "name": "I Smile Dental clinics",
+            "link": "https://www.instagram.com/ismile_dental_official"
+        },
+        "facebook": {
+            "name": "I Smile Dental clinics",
+            "link": "https://www.facebook.com/ismileclinicsdental"
+        },
+        "branches": [
+            {
+                "branchName": "القليوبية",
+                "phone": [
+                    "+201009007229"
+                ],
+                "whatsApp": [
+                    "+201009007229"
+                ],
+                "location": "https://www.google.com/maps/dir//%D8%B4%D8%A7%D8%B1%D8%B9+%D8%A7%D9%84%D8%B5%D9%81%D8%A7+%D8%A7%D9%84%D9%85%D8%AA%D9%81%D8%B1%D8%B9+%D9%85%D9%86+%D8%B4%D8%A7%D8%B1%D8%B9+%D8%AC%D8%A7%D9%85%D8%B9+%D9%86%D8%A7%D8%B5%D8%B1,+Al-Qalyubia+Governorate+13511%E2%80%AD/@30.4739471,31.096707,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x14f7df51d7ab3f59:0x1b649440f11c1830!2m2!1d31.1791083!2d30.473973?hl=en-US&entry=ttu"
+            }
+        ]
     }
 }
