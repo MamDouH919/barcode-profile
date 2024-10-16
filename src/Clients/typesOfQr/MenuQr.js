@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Avatar, Box, Button, Container, Dialog, DialogContent, DialogTitle, Paper, Snackbar, Stack, Typography } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import ProfileImage from '../Components/ProfileImage';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaTiktok } from 'react-icons/fa';
 
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -91,7 +91,7 @@ const StyledTabs = styled(({ color, subTab, ...props }) => (
         backgroundColor: subTab ? color : "none",
     },
     '& .MuiTabs-flexContainer': {
-        display: "block"
+        padding: theme.spacing(0,1)
     },
 }));
 
@@ -137,7 +137,8 @@ function TabPanel(props) {
 }
 const Icons = {
     facebook: <FaFacebookF color='white' fontSize={"larger"} />,
-    instagram: <FaInstagram color='white' fontSize={"larger"} />
+    instagram: <FaInstagram color='white' fontSize={"larger"} />,
+    tikTok: <FaTiktok color='white' fontSize={"larger"} />,
 }
 
 const MenuQr = ({ client, id }) => {
@@ -175,6 +176,8 @@ const MenuQr = ({ client, id }) => {
         setSnackbarOpen(false);
     };
 
+    console.log(client);
+    
 
     return (
         <Root className={classes.leftWrapper}>
@@ -291,7 +294,7 @@ const MenuQr = ({ client, id }) => {
                             aria-label="visible arrows tabs example"
                             color={client.color}
                         >
-                            {["Menu", "Information"].map((tab, index) =>
+                            {["Menu", "Information", "offers"].map((tab, index) =>
                                 <StyledTab label={tab} key={index} color={client.color} />
                             )}
                         </StyledTabs>
@@ -381,7 +384,13 @@ const MenuQr = ({ client, id }) => {
                                 </Stack>
                             </Container>
                         </TabPanel>
-
+                        <TabPanel value={value} index={2}>
+                            <Container maxWidth={'lg'} sx={{ p: 0 }}>
+                                <Stack alignItems={"center"}>
+                                    <Slider images={client.offers} color={client.color} />
+                                </Stack>
+                            </Container>
+                        </TabPanel>
                     </div>
                 </Stack>
             </Stack>

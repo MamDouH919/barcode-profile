@@ -327,6 +327,11 @@
                 "type": "facebook",
                 "name": "Steakburger",
                 "link": "https://www.facebook.com/Steakburger1.ye"
+            },
+            {
+                "type": "tikTok",
+                "name": "Steakburger",
+                "link": "https://www.tiktok.com/@steak.burger0?_t=8qbIRHl8Rkd&_r=1"
             }
         ],
         "menu": [
@@ -340,6 +345,20 @@
                     "steakBurger/page-4.png"
                 ]
             }
+        ],
+        "offers": [
+            "steakBurger/offer-12.jpg",
+            "steakBurger/offer-11.jpg",
+            "steakBurger/offer-10.jpg",
+            "steakBurger/offer-9.jpg",
+            "steakBurger/offer-8.jpg",
+            "steakBurger/offer-7.jpg",
+            "steakBurger/offer-6.jpg",
+            "steakBurger/offer-5.jpg",
+            "steakBurger/offer-4.jpg",
+            "steakBurger/offer-3.jpeg",
+            "steakBurger/offer-2.jpeg",
+            "steakBurger/offer-1.jpeg"
         ],
         "branches": [
             {
@@ -380,7 +399,7 @@
             "name": "First Medical Clinic",
             "link": "https://www.facebook.com/profile.php?id=61551746921563"
         },
-        "snapChat":{
+        "snapChat": {
             "name": "First Medical Clinic",
             "link": "https://www.snapchat.com/add/first.medical?share_id=73L9uH0gSLc&locale=en-GB"
         },

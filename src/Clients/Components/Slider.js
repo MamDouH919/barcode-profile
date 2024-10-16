@@ -89,14 +89,15 @@ const Slider = ({ images, color }) => {
                     },
                     background: "none",
                     "& .MuiMobileStepper-dot": {
-                        background: "#c0c0c0"
+                        background: "#c0c0c0",
+                        display: { xs: 'none', sm: 'block' } 
                     },
                     "& .MuiMobileStepper-dot.MuiMobileStepper-dotActive": {
                         background: color
                     }
                 }}
                 steps={maxSteps}
-                position="static"
+                position="bottom"
                 activeStep={activeStep}
                 nextButton={
                     <Button
