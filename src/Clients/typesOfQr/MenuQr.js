@@ -91,9 +91,23 @@ const StyledTabs = styled(({ color, subTab, ...props }) => (
         backgroundColor: subTab ? color : "none",
     },
     '& .MuiTabs-flexContainer': {
-        padding: theme.spacing(0,1)
+        padding: theme.spacing(0, 1)
     },
 }));
+
+const ar = {
+    "menu": "منيو",
+    "information": "معلومات",
+    "offers": "عروض",
+    "shareIt": "شاركها مع أصدقائك"
+}
+
+const en = {
+    "menu": "menu",
+    "information": "information",
+    "offers": "offers",
+    "shareIt": "Share it with your friends"
+}
 
 const StyledTab = styled(({ color, subTab, ...props }) => (
     <Tab disableRipple {...props} />
@@ -176,8 +190,7 @@ const MenuQr = ({ client, id }) => {
         setSnackbarOpen(false);
     };
 
-    console.log(client);
-    
+    const tabsTitle = client.lang === "ar" ? [ar.menu, ar.information, ar.offers] : [en.menu, en.information, en.offers]
 
     return (
         <Root className={classes.leftWrapper}>
@@ -210,7 +223,7 @@ const MenuQr = ({ client, id }) => {
 
                         >
                             <DialogTitle id="alert-dialog-title">
-                                {"Share it with your friends"}
+                                {client.lang === "ar" ? ar.shareIt : en.shareIt}
                             </DialogTitle>
                             <DialogContent sx={{ background: "white", pt: "16px !important" }}>
                                 <Stack direction={"row"} spacing={2} flexWrap={"wrap"}>
@@ -276,7 +289,7 @@ const MenuQr = ({ client, id }) => {
                         <div onClick={handleClickOpen}>
                             <InfoItem color={client.color} SecondColor={client.SecondColor} action item={{
                                 type: "share",
-                                value: "share it with your friends"
+                                value: client.lang === "ar" ? ar.shareIt : en.shareIt
                             }} />
                         </div>
                     </Stack>
@@ -294,7 +307,7 @@ const MenuQr = ({ client, id }) => {
                             aria-label="visible arrows tabs example"
                             color={client.color}
                         >
-                            {["Menu", "Information", "offers"].map((tab, index) =>
+                            {tabsTitle.map((tab, index) =>
                                 <StyledTab label={tab} key={index} color={client.color} />
                             )}
                         </StyledTabs>

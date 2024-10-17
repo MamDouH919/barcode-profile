@@ -322,6 +322,7 @@
         "SecondColor": "#0e406b",
         "image": "steak-burger.jpg",
         "menuQr": true,
+        "lang": "ar",
         "social": [
             {
                 "type": "facebook",
