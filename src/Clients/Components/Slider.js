@@ -36,7 +36,7 @@ const Slider = ({ images, color }) => {
         setLoading(false);
     };
     return (
-        <Stack flexGrow={1} justifyContent={"center"} alignItems={"center"} sx={{ maxWidth: "auto", minHeight: "600px" }}>
+        <Stack flexGrow={1} justifyContent={"flex-start"} alignItems={"center"} sx={{ maxWidth: "auto", minHeight: "600px" }}>
             <AutoPlaySwipeableViews
                 axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
                 index={activeStep}

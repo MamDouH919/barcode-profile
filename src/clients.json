@@ -461,5 +461,55 @@
                 ]
             }
         ]
+    },
+    "pizza-pepo": {
+        "key": "pizzaPepo",
+        "name": "pizza pepo",
+        "hashtag": "#pizzaPepo",
+        "color": "#eb1d23",
+        "SecondColor": "#badffb",
+        "image": "pizza-pepo.jpg",
+        "menuQr": true,
+        "lang": "ar",
+        "social": [
+            {
+                "type": "facebook",
+                "name": "pizza pepo",
+                "link": "https://www.facebook.com/Spaghttii"
+            }
+        ],
+        "menu": [
+            {
+                "title": "كل الأصناف",
+                "images": [
+                    "pizza-pepo/menu1.jpg",
+                    "pizza-pepo/menu2.jpg",
+                    "pizza-pepo/menu3.jpg"
+                ]
+            }
+        ],
+        "offers": [
+            "pizza-pepo/offer-4.jpg",
+            "pizza-pepo/offer-3.jpg",
+            "pizza-pepo/offer-2.jpg",
+            "pizza-pepo/offer-1.jpg"
+        ],
+        "branches": [
+            {
+                "branchName": "فرع بنها",
+                "branchInfo": [
+                    {
+                        "type": "phone",
+                        "value": "+201065222155",
+                        "link": "tel:+201065222155"
+                    },
+                    {
+                        "type": "location",
+                        "value": "شارع الاستاد خلف دونتس, Benha, Egypt",
+                        "link": "https://www.google.com/maps/dir/?api=1&destination=30.457404740725%2C31.181538&fbclid=IwY2xjawGPea5leHRuA2FlbQIxMAABHUmVkO0RK1eXHrN_F_PdYfd8vw1CXUQznypd9fcY6lqUMwo514opeUEA8g_aem_u6Jym5EsKZvZGkW5K_j_Hw"
+                    }
+                ]
+            }
+        ]
     }
 }

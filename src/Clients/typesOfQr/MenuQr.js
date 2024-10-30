@@ -357,7 +357,7 @@ const MenuQr = ({ client, id }) => {
                                     <Box sx={{
                                         display: "grid",
                                         position: "relative"
-                                    }} >
+                                    }}>
                                         <StyledTabs
                                             subTab
                                             value={infoValue}
