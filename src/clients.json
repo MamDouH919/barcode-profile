@@ -463,7 +463,7 @@
         ]
     },
     "pizza-pepo": {
-        "key": "pizzaPepo",
+        "key": "pizza-pepo",
         "name": "pizza pepo",
         "hashtag": "#pizzaPepo",
         "color": "#eb1d23",
@@ -506,7 +506,7 @@
                     {
                         "type": "location",
                         "value": "شارع الاستاد خلف دونتس, Benha, Egypt",
-                        "link": "https://www.google.com/maps/dir/?api=1&destination=30.457404740725%2C31.181538&fbclid=IwY2xjawGPea5leHRuA2FlbQIxMAABHUmVkO0RK1eXHrN_F_PdYfd8vw1CXUQznypd9fcY6lqUMwo514opeUEA8g_aem_u6Jym5EsKZvZGkW5K_j_Hw"
+                        "link": "https://www.google.com/maps/place/30%C2%B028'11.8%22N+31%C2%B011'04.1%22E/@30.469944,31.1819077,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.469944!4d31.1844826?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
                     }
                 ]
             }

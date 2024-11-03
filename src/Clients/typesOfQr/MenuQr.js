@@ -26,6 +26,7 @@ import {
 } from 'react-share';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
+import PoweredBy from '../Components/PoweredBy';
 
 const PREFIX = 'MenuQr';
 
@@ -286,12 +287,12 @@ const MenuQr = ({ client, id }) => {
                                 </Stack>
                             </DialogContent>
                         </Dialog>
-                        <div onClick={handleClickOpen}>
+                        <Box onClick={handleClickOpen} sx={{ cursor: "pointer" }}>
                             <InfoItem color={client.color} SecondColor={client.SecondColor} action item={{
                                 type: "share",
                                 value: client.lang === "ar" ? ar.shareIt : en.shareIt
                             }} />
-                        </div>
+                        </Box>
                     </Stack>
                 </Box>
                 <Stack alignItems={"center"} sx={{ position: "relative" }}>
@@ -407,6 +408,11 @@ const MenuQr = ({ client, id }) => {
                     </div>
                 </Stack>
             </Stack>
+            <footer>
+                <Stack height={100}>
+                    <PoweredBy />
+                </Stack>
+            </footer>
         </Root>
     )
 }
