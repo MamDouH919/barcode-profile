@@ -511,5 +511,81 @@
                 ]
             }
         ]
+    },
+    "bar-mousa": {
+        "key": "bar-mousa",
+        "name": "bar mousa",
+        "hashtag": "#barMousa",
+        "color": "#f66c3b",
+        "SecondColor": "#dbb78c",
+        "image": "bar-mousa.jpg",
+        "menuQr": true,
+        "lang": "ar",
+        "social": [
+            {
+                "type": "facebook",
+                "name": "pizza pepo",
+                "link": "https://www.facebook.com/Spaghttii"
+            }
+        ],
+        "menu": [
+            {
+                "title": "حلو x حلو",
+                "images": [
+                    "barMousa/menu1.jpeg"
+                ]
+            },
+            {
+                "title": "كبدة 2 جو",
+                "images": [
+                    "barMousa/menu2.jpeg"
+                ]
+            },
+            {
+                "title": "بار موسي",
+                "images": [
+                    "barMousa/menu3.jpeg"
+                ]
+            },
+            {
+                "title": "بيتزا بيبو",
+                "images": [
+                    "barMousa/menu4.jpeg",
+                    "barMousa/menu5.jpeg",
+                    "barMousa/menu6.jpeg"
+                ]
+            }
+        ],
+        "categories": [
+            "barMousa/category-1.jpeg",
+            "barMousa/category-2.jpeg",
+            "barMousa/category-3.jpeg",
+            "barMousa/category-4.jpeg",
+            "barMousa/category-5.jpeg",
+            "barMousa/category-6.jpeg",
+            "barMousa/category-7.jpeg",
+            "barMousa/category-8.jpeg",
+            "barMousa/category-9.jpeg",
+            "barMousa/category-10.jpeg",
+            "barMousa/category-11.jpeg",
+            "barMousa/category-12.jpeg"
+        ],
+        "branches": [
+            {
+                "branchName": "فرع بنها",
+                "branchInfo": [
+                    {
+                        "type": "phone",
+                        "value": "+201065222155",
+                        "link": "tel:+201065222155"
+                    },
+                    {
+                        "type": "location",
+                        "value": "شارع الاستاد خلف دونتس, Benha, Egypt",
+                        "link": "https://www.google.com/maps/place/30%C2%B028'11.8%22N+31%C2%B011'04.1%22E/@30.469944,31.1819077,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.469944!4d31.1844826?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
+                    }
+                ]
+            }
+        ]
     }
 }

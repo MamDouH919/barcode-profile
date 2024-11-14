@@ -100,13 +100,14 @@ const ar = {
     "menu": "منيو",
     "information": "معلومات",
     "offers": "عروض",
+    "categories": "الآصناف",
     "shareIt": "شاركها مع أصدقائك"
 }
 
 const en = {
     "menu": "menu",
     "information": "information",
-    "offers": "offers",
+    "categories": "categories",
     "shareIt": "Share it with your friends"
 }
 
@@ -191,7 +192,14 @@ const MenuQr = ({ client, id }) => {
         setSnackbarOpen(false);
     };
 
-    const tabsTitle = client.lang === "ar" ? [ar.menu, ar.information, ar.offers] : [en.menu, en.information, en.offers]
+    const tabsTitle = client.lang === "ar" ? [ar.menu, ar.information] : [en.menu, en.information]
+
+    if (client.offers) {
+        client.lang === "ar" ? tabsTitle.push(ar.offers) : tabsTitle.push(en.offers)
+    }
+    if (client.categories) {
+        client.lang === "ar" ? tabsTitle.push(ar.categories) : tabsTitle.push(en.categories)
+    }
 
     return (
         <Root className={classes.leftWrapper}>
@@ -398,13 +406,20 @@ const MenuQr = ({ client, id }) => {
                                 </Stack>
                             </Container>
                         </TabPanel>
-                        <TabPanel value={value} index={2}>
+                        {client.offers && <TabPanel value={value} index={2}>
                             <Container maxWidth={'lg'} sx={{ p: 0 }}>
                                 <Stack alignItems={"center"}>
                                     <Slider images={client.offers} color={client.color} />
                                 </Stack>
                             </Container>
-                        </TabPanel>
+                        </TabPanel>}
+                        {client.categories && <TabPanel value={value} index={2}>
+                            <Container maxWidth={'lg'} sx={{ p: 0 }}>
+                                <Stack alignItems={"center"}>
+                                    <Slider images={client.categories} color={client.color} />
+                                </Stack>
+                            </Container>
+                        </TabPanel>}
                     </div>
                 </Stack>
             </Stack>
