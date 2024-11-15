@@ -85,7 +85,7 @@ const ProfileImage = props => {
     const {
         img,
         clientColor,
-        secondaryColor,
+        secondColor,
         size,
         name
     } = props
@@ -96,7 +96,7 @@ const ProfileImage = props => {
         <Root
             sx={{
                 ":before": {
-                    background: `linear-gradient(315deg,${secondaryColor ? secondaryColor : theme.palette.primary.main},${clientColor})`,
+                    background: `linear-gradient(315deg,${secondColor ? secondColor : theme.palette.primary.main},${clientColor})`,
                 },
                 width: size ?? "250px",
                 height: size ?? "250px",

@@ -1,56 +1,45 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import { Avatar, Stack, Typography } from '@mui/material'
-import { FaWhatsapp } from 'react-icons/fa'
-import { LocalPhone, LocationOn } from '@mui/icons-material'
+import { Avatar, Box, Paper, Stack, Typography } from '@mui/material'
+import { FaWhatsapp, FaPhoneAlt } from 'react-icons/fa'
+import { IoLocationSharp } from 'react-icons/io5'
 
-const BranchInfo = props => {
-    const { branch } = props
-    return (
-        <Stack spacing={2} alignItems={"center"}>
-            <Typography variant='h6' textAlign={"center"}>فرع {branch.branchName}</Typography>
-            <Stack direction={"row"} spacing={2} flexWrap={"wrap"} useFlexGap justifyContent={"center"}>
-                {branch.whatsApp && branch.whatsApp.map((element, index) =>
-                    <Stack alignItems={"center"} key={index}>
-                        <a target='_blank' href={`https://wa.me/${element}`} rel="noreferrer">
-                            <Avatar sx={{ width: 30, height: 30, background: "white" }}>
-                                <FaWhatsapp />
-                            </Avatar>
-                        </a>
-                        <Typography color={"text.primary"}>
-                            WhatsApp {branch.whatsApp.length > 1 ? `- ${index + 1}` : ""}
-                        </Typography>
-                    </Stack>
-                )}
-                {branch.phone && branch.phone.map((phone, index) =>
-                    <Stack alignItems={"center"} key={index}>
-                        <a target='_blank' href={`tel:${phone}`} rel="noreferrer">
-                            <Avatar sx={{ width: 30, height: 30, background: "white" }}>
-                                <LocalPhone />
-                            </Avatar>
-                        </a>
-                        <Typography color={"text.primary"}>
-                            Mobile {branch.phone.length > 1 ? `- ${index + 1}` : ""}
-                        </Typography>
-                    </Stack>
-                )}
-                {branch.location && <Stack alignItems={"center"}>
-                    <a target='_blank' href={branch.location} rel="noreferrer">
-                        <Avatar sx={{ width: 30, height: 30, background: "white" }}>
-                            <LocationOn />
-                        </Avatar>
-                    </a>
-                    <Typography color={"text.primary"}>
-                        Location
-                    </Typography>
-                </Stack>}
-            </Stack>
-        </Stack>
-    )
+const Icons = {
+    phone: <FaPhoneAlt color='green' size={25} />,
+    location: <IoLocationSharp color='#EA4335' size={30} />,
+    whatsApp: <FaWhatsapp color='#25D366' size={30} />,
 }
 
-BranchInfo.propTypes = {
-    branch: PropTypes.object.isRequired
+const BranchInfo = ({ branches, secondColor }) => {
+    return (
+        <Stack spacing={1} alignItems={"center"}>
+            <Stack mb={1} >
+                <Typography variant='h4' fontWeight={"bolder"}>Our Branches</Typography>
+                <Box height={"3px"} width={"50%"} mt={1} bgcolor={secondColor ?? "#000"} mx={"auto"} />
+            </Stack>
+            {branches.map((branch, i) =>
+                <Stack spacing={1} alignItems={"center"}>
+                    <Typography fontSize={22} textAlign={"center"} fontWeight={"bolder"}>{branch.branchName}</Typography>
+                    <Stack
+                        p={1}
+                        component={Paper}
+                        sx={{ borderRadius: "40px" }}
+                        elevation={5}
+                        direction={"row"}
+                        spacing={2}
+                        bgcolor={"inherit"}
+                    >
+                        {branch.contact.map((e) =>
+                            <Avatar sx={{ bgcolor: "white" }}>
+                                {Icons[e.type]}
+                            </Avatar>
+                        )}
+                    </Stack>
+                </Stack>
+            )}
+
+
+        </Stack>
+    )
 }
 
 export default BranchInfo
