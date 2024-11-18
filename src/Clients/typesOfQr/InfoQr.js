@@ -8,9 +8,8 @@ import ProfileImage from '../Components/ProfileImage';
 import BranchInfo from '../Components/BranchInfo';
 import PoweredBy from '../Components/PoweredBy';
 import BaitWardDialog from '../Components/BaitWardDialog';
-import { Helmet } from 'react-helmet';
-import SocialMedia from '../Components/SocialMedia';
 import ItemNoLink from '../Components/Item';
+import { Helmet } from 'react-helmet';
 
 const PREFIX = 'InfoQr';
 
@@ -77,41 +76,68 @@ const InfoQr = ({ client, id }) => {
             {open && id === "bait-ward" && <BaitWardDialog open={open} setOpen={setOpen} />}
             <Grid container className={classes.qrCodeData}>
                 <Grid xs={12} md={6} position={"relative"}>
-                    <Box
-                        className={classes.leftWrapper}
-                        sx={{ backgroundImage: `url(${require(`../../imgs/${client.image}`)})`, }}
-                    >
+                    <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require(`../../imgs/${client.image}`)})`, }}>
                         <div className={classes.content}>
-                            <ProfileImage
-                                clientColor={client.color}
-                                img={require(`../../imgs/${client.image}`)}
-                                name={client.name}
-                                secondColor={client.secondColor}
-                            />
-                            <Typography
-                                variant='h1'
-                                fontSize={40}
-                                my={2}
-                                textAlign={"center"}
-                                textTransform={"capitalize"}
-                                fontWeight={"bolder"}
-                            >
-                                {client.name}
-                            </Typography>
+                            <ProfileImage clientColor={client.color} img={require(`../../imgs/${client.image}`)} name={client.name} />
+                            <Typography variant='h1' fontSize={40} my={2} textAlign={"center"} textTransform={"capitalize"}>{client.name}</Typography>
                         </div>
                     </Box>
                 </Grid>
                 <Grid xs={12} md={6} bgcolor={client.color}>
-                    <Stack spacing={1} className={classes.content}>
-                        {client.social.length > 0 &&
-                            <SocialMedia social={client.social} secondColor={client.secondColor} />}
-
-
+                    <div className={classes.content}>
+                        <Stack mb={2}>
+                            <Typography variant='h4'>Social Media</Typography>
+                            <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
+                        </Stack>
+                        <Stack direction={"row"} spacing={2} flexWrap={"wrap"} justifyContent={"center"} useFlexGap>
+                            {client.facebook && <ZeroWidthStack
+                                link={client.facebook.link}
+                                icon={"facebook"}
+                                name={client.facebook.name}
+                            />}
+                            {client.instagram && <ZeroWidthStack
+                                link={client.instagram.link}
+                                icon={"instagram"}
+                                name={client.instagram.name}
+                            />}
+                            {client.snapChat && <ZeroWidthStack
+                                link={client.snapChat.link}
+                                icon={"snapChat"}
+                                name={client.snapChat.name}
+                            />}
+                            {client.twitter && <ZeroWidthStack
+                                link={client.twitter.link}
+                                icon={"twitter"}
+                                name={client.twitter.name}
+                            />}
+                            {client.tikTok && <ZeroWidthStack
+                                link={client.tikTok.link}
+                                icon={"tikTok"}
+                                name={client.tikTok.name}
+                            />}
+                            {client.youtube && <ZeroWidthStack
+                                link={client.youtube.link}
+                                icon={"youtube"}
+                                name={client.youtube.name}
+                            />}
+                            {client.fbGroup && client.fbGroup.map((item, index) =>
+                                <ZeroWidthStack
+                                    key={index}
+                                    link={item.link}
+                                    icon={"group"}
+                                    name={item.name}
+                                />
+                            )}
+                            {id === "bait-ward" && <ItemNoLink
+                                click={() => setOpen(true)}
+                                icon={"menu"}
+                                name={"مينو بيت ورد"}
+                            />}
+                        </Stack>
                         {(client.phone || client.whatsApp) && <Stack mb={1} mt={1}>
                             <Typography variant='h4'>Contact Us</Typography>
                             <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
                         </Stack>}
-
                         <Stack direction={"row"} spacing={2} flexWrap={"wrap"} justifyContent={"center"} useFlexGap>
                             {client.whatsApp && <ZeroWidthStack
                                 link={`https://wa.me/${client.whatsApp.link}`}
@@ -124,14 +150,14 @@ const InfoQr = ({ client, id }) => {
                                 name={client.phone.name}
                             />}
                         </Stack>
-                        <BranchInfo branches={client.branches} secondColor={client.secondColor} />
-
-                        {id === "bait-ward" && <ItemNoLink
-                            click={() => setOpen(true)}
-                            icon={"menu"}
-                            name={"مينو بيت ورد"}
-                        />}
-                    </Stack>
+                        <Stack mb={1} mt={1}>
+                            <Typography variant='h4'>Our Branches</Typography>
+                            <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
+                        </Stack>
+                        {client.branches.map((branch, i) =>
+                            <BranchInfo branch={branch} key={i} />
+                        )}
+                    </div>
                 </Grid>
 
             </Grid>
