@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Avatar, Box, Paper, Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import Grid from '@mui/material/Unstable_Grid2'
 import { styled } from '@mui/material/styles';
 
@@ -8,10 +8,9 @@ import ProfileImage from '../Components/ProfileImage';
 import BranchInfo from '../Components/BranchInfo';
 import PoweredBy from '../Components/PoweredBy';
 import BaitWardDialog from '../Components/BaitWardDialog';
-import ItemNoLink from '../Components/Item';
 import { Helmet } from 'react-helmet';
-import { FaFacebookF, FaInstagram } from 'react-icons/fa';
 import SocialMedia from '../Components/SocialMedia';
+import ItemNoLink from '../Components/Item';
 
 const PREFIX = 'InfoQr';
 
@@ -107,6 +106,7 @@ const InfoQr = ({ client, id }) => {
                         {client.social.length > 0 &&
                             <SocialMedia social={client.social} secondColor={client.secondColor} />}
 
+
                         {(client.phone || client.whatsApp) && <Stack mb={1} mt={1}>
                             <Typography variant='h4'>Contact Us</Typography>
                             <Box height={"3px"} width={"50%"} mt={1} bgcolor={"#000"} mx={"auto"} />
@@ -125,6 +125,12 @@ const InfoQr = ({ client, id }) => {
                             />}
                         </Stack>
                         <BranchInfo branches={client.branches} secondColor={client.secondColor} />
+
+                        {id === "bait-ward" && <ItemNoLink
+                            click={() => setOpen(true)}
+                            icon={"menu"}
+                            name={"مينو بيت ورد"}
+                        />}
                     </Stack>
                 </Grid>
 

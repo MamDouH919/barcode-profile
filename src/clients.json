@@ -91,43 +91,64 @@
         "name": "jeep city",
         "color": "#664f06",
         "image": "jeep.jpg",
-        "facebook": {
-            "name": "Jeep City- El Tantawy USA",
-            "link": "https://www.facebook.com/jeepcityegy"
-        },
-        "instagram": {
-            "name": "Jeep City - El Tantawy USA",
-            "link": "https://www.instagram.com/jeepcity_eltantawyusa?igsh=YWR3dzc0NWI5czgx"
-        },
+        "social": [
+            {
+                "type": "facebook",
+                "name": "Jeep City- El Tantawy USA",
+                "link": "https://www.facebook.com/jeepcityegy"
+            },
+            {
+                "type": "instagram",
+                "name": "Jeep City - El Tantawy USA",
+                "link": "https://www.instagram.com/jeepcity_eltantawyusa?igsh=YWR3dzc0NWI5czgx"
+            }
+        ],
         "branches": [
             {
                 "branchName": "القاهرة الجديدة - مدينة الرحاب - السوق الشرقى",
-                "phone": "",
-                "location": "https://maps.app.goo.gl/xy6s9dMikWH35srh7",
-                "whatsApp": ""
+                "contact": [
+                    {
+                        "type": "location",
+                        "link": "https://maps.app.goo.gl/xy6s9dMikWH35srh7"
+                    }
+                ]
             }
         ]
     },
     "bait-ward": {
         "name": "bait ward",
         "color": "#785d28",
+        "secondColor": null,
         "image": "bait-ward.jpg",
-        "facebook": {
-            "name": "خيمة بيت ورد",
-            "link": "https://www.facebook.com/baitwardcafe"
-        },
-        "instagram": {
-            "name": "خيمة بيت ورد",
-            "link": "https://www.instagram.com/baitward.official/"
-        },
+        "social": [
+            {
+                "type": "facebook",
+                "name": "خيمة بيت ورد",
+                "link": "https://www.facebook.com/baitwardcafe"
+            },
+            {
+                "type": "instagram",
+                "name": "خيمة بيت ورد",
+                "link": "https://www.instagram.com/baitward.official/"
+            }
+        ],
         "branches": [
             {
                 "branchName": "بنها - الفلل - طريق أبو حشيش بجوار مدرسه",
-                "phone": [
-                    "+201200034348",
-                    "+201154441442"
-                ],
-                "location": "https://www.google.com/maps/dir/?api=1&destination=30.482700678791%2C31.183715396775&fbclid=IwAR1MpCxveY7HHBfuTs8FH8IpjHFqQnxAHkttltnrXEWBzCfp70lmlS1Rve4"
+                "contact": [
+                    {
+                        "type": "phone",
+                        "link": "+201200034348"
+                    },
+                    {
+                        "type": "phone",
+                        "link": "+201154441442"
+                    },
+                    {
+                        "type": "location",
+                        "link": "https://www.google.com/maps/dir/?api=1&destination=30.482700678791%2C31.183715396775&fbclid=IwAR1MpCxveY7HHBfuTs8FH8IpjHFqQnxAHkttltnrXEWBzCfp70lmlS1Rve4"
+                    }
+                ]
             }
         ]
     },

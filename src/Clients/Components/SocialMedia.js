@@ -17,7 +17,7 @@ const SocialMedia = ({
         <Stack alignItems={"center"}>
             <Stack mb={1}>
                 <Typography variant='h4' fontWeight={"bolder"}>Social Media</Typography>
-                <Box height={"3px"} width={"50%"} mt={0.5} bgcolor={secondColor} mx={"auto"} />
+                <Box height={"3px"} width={"50%"} mt={0.5} bgcolor={secondColor ?? "#000"} mx={"auto"} />
             </Stack>
             <Stack
                 p={1}
