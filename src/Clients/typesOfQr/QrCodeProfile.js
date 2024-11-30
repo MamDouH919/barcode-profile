@@ -60,7 +60,8 @@ const Root = styled(Stack)(({ theme }) => ({
 
 const QrCodeProfile = ({
   client,
-  id
+  id,
+  hidePoweredBy
 }) => {
   return (
     <Root>
@@ -84,6 +85,12 @@ const QrCodeProfile = ({
           </Typography>
           <Stack className={classes.contentPaper} spacing={2} component={Paper} p={2}>
             {id && client.menu && <SlideShowLink type={"menu"} color={client.color} id={id} title={"menu"} folderType={"menu"} />}
+            {client.phone &&
+              <SocialCard to={`tel:${client.phone.link}`} type={"phone"} title={client.phone.name} color={client.color} />
+            }
+            {client.whatsApp &&
+              <SocialCard to={`https://wa.me/${client.whatsApp.link}`} type={"whatsApp"} title={client.whatsApp.name} color={client.color} />
+            }
             {client.facebook &&
               <SocialCard to={client.facebook.link} type={"facebook"} color={client.color} />
             }
@@ -102,13 +109,13 @@ const QrCodeProfile = ({
             {client.fbGroup && client.fbGroup.map((item, index) =>
               <SocialCard to={item.link} type={"group"} title={item.name} color={client.color} key={index} />
             )}
-            {client.branches.map((branch, i) =>
+            {client.branches && client.branches.map((branch, i) =>
               <BranchData key={i} branch={branch} color={client.color} />
             )}
           </Stack>
         </Stack>
       </Stack>
-      <PoweredBy />
+      {!hidePoweredBy && <PoweredBy />}
     </Root>
   )
 }

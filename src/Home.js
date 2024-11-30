@@ -11,6 +11,7 @@ import otherClients from './otherClients.json';
 // import QRCode from "react-qr-code";
 import { FaWhatsapp } from 'react-icons/fa';
 import ProfileImage from './Clients/Components/ProfileImage';
+import QrCodeProfile from './Clients/typesOfQr/QrCodeProfile';
 
 const PREFIX = 'Home';
 
@@ -68,53 +69,31 @@ function Home(props) {
         };
     });
 
+    const data = {
+        "name": "mountain",
+        "color": "#fff",
+        "image": "profile.jpg",
+        "phone": {
+            "name": "01060168136",
+            "link": "+201060168136"
+        },
+        "whatsApp": {
+            "name": "01060168136",
+            "link": "+201060168136"
+        },
+        "facebook": {
+            "name": "Jeep City- El Tantawy USA",
+            "link": "https://www.facebook.com/@m.mountain.agency/"
+        },
+        "instagram": {
+            "name": "Jeep City - El Tantawy USA",
+            "link": "https://www.instagram.com/mm_adv_agency"
+        },
+    }
+
     return (
         <Root>
-            <Grid container width={"100%"} height={"100%"} borderBottom={(theme) => `1px solid ${theme.palette.divider}`}>
-                <Grid xs={12} md={6} position={"relative"}>
-                    <Box className={classes.leftWrapper} sx={{ backgroundImage: `url(${require('./imgs/profile.jpg')})`, }}>
-                        <div className={classes.content}>
-                            <ProfileImage clientColor={"#d4d2d3"} img={require('./imgs/profile.jpg')} />
-                            <Typography variant='h3' my={2} textAlign={"center"}>Mountain Marketing Agency</Typography>
-                            <Stack direction={"row"} spacing={2}>
-                                <Stack alignItems={"center"}>
-                                    <a target='_blank' href={`https://wa.me/+201060168136`} rel="noreferrer">
-                                        <Avatar sx={{ width: 30, height: 30, background: "white" }}>
-                                            <FaWhatsapp />
-                                        </Avatar>
-                                    </a>
-                                    <Typography color={"text.primary"}>
-                                        WhatsApp
-                                    </Typography>
-                                </Stack>
-                                <Stack alignItems={"center"}>
-                                    <a target='_blank' href={`tel:+201060168136`} rel="noreferrer">
-                                        <Avatar sx={{ width: 30, height: 30, background: "white" }}>
-                                            <LocalPhoneIcon />
-                                        </Avatar>
-                                    </a>
-                                    <Typography color={"text.primary"}>
-                                        Mobile
-                                    </Typography>
-                                </Stack>
-                            </Stack>
-                        </div>
-                    </Box>
-                </Grid>
-                <Grid xs={12} md={6}>
-                    <div className={classes.content}>
-                        <Typography variant='h3' mb={2}>Social Media</Typography>
-                        {social.map((e, i) =>
-                            e.link && <ZeroWidthStack
-                                key={i}
-                                link={e.link}
-                                icon={e.id}
-                                name={e.name}
-                            />
-                        )}
-                    </div>
-                </Grid>
-            </Grid>
+            <QrCodeProfile client={data} hidePoweredBy/>
             <Stack justifyContent={"center"} alignItems={"center"} spacing={2} mt={3}>
                 <Typography variant='h4'>Our Clients</Typography>
                 <Stack direction={"row"} useFlexGap spacing={3} flexWrap={"wrap"} justifyContent={"center"}>
