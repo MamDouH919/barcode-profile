@@ -44,6 +44,7 @@ const BranchInfo = props => {
                         Location
                     </Typography>
                 </Stack>}
+                <div>Moataz Ahmed</div>
             </Stack>
         </Stack>
     )

@@ -12,7 +12,6 @@ import {
 
 import NotFound from './NotFound';
 import React from 'react';
-import NewComp from './Clients/typesOfQr/NewComp';
 // import ArabClinic from './Clients/ArabClinic';
 // import JeepCity from './Clients/JeepCity';
 // import BaitWard from './Clients/BaitWard';
@@ -122,7 +121,6 @@ export default function App() {
           <Route index element={<Home />} />
           <Route index path=":id" element={<Clients />} />
         </Route>
-        <Route index path="/new" element={<NewComp />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </ThemeProvider>

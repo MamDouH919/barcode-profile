@@ -79,6 +79,7 @@
         "name": "bait ward",
         "color": "#785d28",
         "image": "bait-ward.jpg",
+        "menu": true,
         "facebook": {
             "name": "خيمة بيت ورد",
             "link": "https://www.facebook.com/baitwardcafe"
