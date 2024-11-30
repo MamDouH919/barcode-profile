@@ -51,6 +51,18 @@
                 "whatsApp": [
                     "+201060094332"
                 ]
+            },
+            {
+                "branchName": "السنطة",
+                "phone": [
+                    "+201009960086",
+                    "+201144239659"
+                ],
+                "location":"https://www.google.com/maps/place/30%C2%B043'30.6%22N+31%C2%B007'19.0%22E/@30.7251701,31.1193695,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.7251701!4d31.1219444?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D",
+                "whatsApp": [
+                    "+201009960086",
+                    "+201144239659"
+                ]
             }
         ]
     },

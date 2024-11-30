@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c26f84ad.css",
-    "main.js": "/static/js/main.fd63806b.js",
-    "static/js/360.2261df05.chunk.js": "/static/js/360.2261df05.chunk.js",
+    "main.js": "/static/js/main.86ff4f11.js",
+    "static/js/360.4bddfa66.chunk.js": "/static/js/360.4bddfa66.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/css/610.bf131833.chunk.css": "/static/css/610.bf131833.chunk.css",
     "static/js/610.63fbfac3.chunk.js": "/static/js/610.63fbfac3.chunk.js",
@@ -90,14 +90,14 @@
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
     "index.html": "/index.html",
     "main.c26f84ad.css.map": "/static/css/main.c26f84ad.css.map",
-    "main.fd63806b.js.map": "/static/js/main.fd63806b.js.map",
-    "360.2261df05.chunk.js.map": "/static/js/360.2261df05.chunk.js.map",
+    "main.86ff4f11.js.map": "/static/js/main.86ff4f11.js.map",
+    "360.4bddfa66.chunk.js.map": "/static/js/360.4bddfa66.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "610.bf131833.chunk.css.map": "/static/css/610.bf131833.chunk.css.map",
     "610.63fbfac3.chunk.js.map": "/static/js/610.63fbfac3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c26f84ad.css",
-    "static/js/main.fd63806b.js"
+    "static/js/main.86ff4f11.js"
   ]
 }

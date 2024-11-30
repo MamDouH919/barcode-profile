@@ -1,7 +1,6 @@
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import CoverImage from '../../imgs/cover.webp'
-import { Paper, Stack, Typography } from '@mui/material';
+import { Box, Paper, Stack, Typography } from '@mui/material';
 import SocialCard from '../Components/SocialCard';
 import BranchData from '../Components/BranchData';
 import { Helmet } from 'react-helmet';
@@ -23,10 +22,21 @@ const Root = styled(Stack)(({ theme }) => ({
     width: "100%"
   },
   [`& .${classes.cover}`]: {
-    backgroundImage: `url(${CoverImage})`,
     backgroundPosition: "center",
-    height: "250px",
-    width: "100%"
+    backgroundSize: "cover",
+    height: "300px",
+    width: "100%",
+    position: "relative",
+    [`&::before`]: {
+      content: "''",
+      height: "100%",
+      width: "100%",
+      backdropFilter: "blur(10px)",
+      background: "rgba(0,0,0,0.7)",
+      position: "absolute",
+      top: 0,
+      left: 0,
+    },
   },
   [`& .${classes.profileImg}`]: {
     position: "relative",
@@ -58,7 +68,7 @@ const QrCodeProfile = ({
         <title>Mountain | {client.name}</title>
       </Helmet>
       <Stack className={classes.page} alignItems={"center"}>
-        <div className={classes.cover} />
+        <Box className={classes.cover} sx={{ backgroundImage: `url(${require(`../../imgs/${client.image}`)})`, }} />
         <Stack className={classes.profileImg} component={Paper} elevation={6}>
           <img
             src={require(`../../imgs/${client.image}`)}
