@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/static/css/main.c26f84ad.css",
-    "main.js": "/static/js/main.7ba573c1.js",
-    "static/js/913.7a313c55.chunk.js": "/static/js/913.7a313c55.chunk.js",
+    "main.js": "/static/js/main.fd63806b.js",
+    "static/js/360.2261df05.chunk.js": "/static/js/360.2261df05.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
-    "static/js/890.703343f2.chunk.js": "/static/js/890.703343f2.chunk.js",
+    "static/css/610.bf131833.chunk.css": "/static/css/610.bf131833.chunk.css",
+    "static/js/610.63fbfac3.chunk.js": "/static/js/610.63fbfac3.chunk.js",
     "static/media/arabprof222.jpg": "/static/media/arabprof222.938c237963de42439783.jpg",
     "static/media/menu5.jpg": "/static/media/menu5.4ea7ebfdb014cfb6b034.jpg",
     "static/media/menu9.jpg": "/static/media/menu9.3bd571dd11dbf6b64217.jpg",
@@ -72,6 +73,7 @@
     "static/media/category-12.jpeg": "/static/media/category-12.279127defc59cec0559a.jpeg",
     "static/media/menu2.jpeg": "/static/media/menu2.69edb26933c6e631845b.jpeg",
     "static/media/category-11.jpeg": "/static/media/category-11.9ddf021bbe204e779741.jpeg",
+    "static/media/cover.webp": "/static/media/cover.f8bb887ee84d77ce839c.webp",
     "static/media/first-medical-clinic.jpg": "/static/media/first-medical-clinic.d5d42de644148aaa0d39.jpg",
     "static/media/Facebook.png": "/static/media/Facebook.790642551cd99bb66a7e.png",
     "static/media/category-3.jpeg": "/static/media/category-3.714bde7bd708df9fedc9.jpeg",
@@ -88,13 +90,14 @@
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
     "index.html": "/index.html",
     "main.c26f84ad.css.map": "/static/css/main.c26f84ad.css.map",
-    "main.7ba573c1.js.map": "/static/js/main.7ba573c1.js.map",
-    "913.7a313c55.chunk.js.map": "/static/js/913.7a313c55.chunk.js.map",
+    "main.fd63806b.js.map": "/static/js/main.fd63806b.js.map",
+    "360.2261df05.chunk.js.map": "/static/js/360.2261df05.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
-    "890.703343f2.chunk.js.map": "/static/js/890.703343f2.chunk.js.map"
+    "610.bf131833.chunk.css.map": "/static/css/610.bf131833.chunk.css.map",
+    "610.63fbfac3.chunk.js.map": "/static/js/610.63fbfac3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c26f84ad.css",
-    "static/js/main.7ba573c1.js"
+    "static/js/main.fd63806b.js"
   ]
 }
