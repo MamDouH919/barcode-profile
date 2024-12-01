@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { styled } from '@mui/material/styles';
 import { Box, Paper, Stack, Typography } from '@mui/material';
 import SocialCard from '../Components/SocialCard';
@@ -6,6 +6,8 @@ import BranchData from '../Components/BranchData';
 import { Helmet } from 'react-helmet';
 import SlideShowLink from '../Components/SlideShowLink';
 import PoweredBy from '../Components/PoweredBy';
+import ShareItDialog from '../Components/ShareItDialog';
+import Grid2 from '@mui/material/Unstable_Grid2';
 
 const PREFIX = 'InfoQr';
 
@@ -63,8 +65,24 @@ const QrCodeProfile = ({
   id,
   hidePoweredBy
 }) => {
+  const [open, setOpen] = useState(false)
+  const handleClose = () => setOpen(false)
+  const handleOpen = () => setOpen(true)
+
+  console.log(id);
+
+
   return (
     <Root>
+      {open && client.hashtag &&
+        <ShareItDialog
+          open={open}
+          handleClose={handleClose}
+          hashtag={client.hashtag}
+          keyValue={id}
+          color={client.color}
+        />
+      }
       <Helmet>
         <title>Mountain | {client.name}</title>
       </Helmet>
@@ -79,12 +97,26 @@ const QrCodeProfile = ({
             style={{ objectFit: "contain" }}
           />
         </Stack>
-        <Stack className={classes.fixRelative} width={"100%"}>
+        <Stack className={classes.fixRelative} width={"100%"} alignItems={"center"}>
           <Typography variant='h1' textAlign={"center"} fontSize={35} textTransform={"capitalize"}>
             {client.name}
           </Typography>
+          {client.hashtag &&
+            <Stack mt={3}>
+              <SocialCard clickFun={handleOpen} type={"Share"} title={"share QR link"} color={client.color} hideEndIcon />
+            </Stack>
+          }
           <Stack className={classes.contentPaper} spacing={2} component={Paper} p={2}>
-            {id && client.menu && <SlideShowLink type={"menu"} color={client.color} id={id} title={"menu"} folderType={"menu"} />}
+            {id && client.menu && Array.isArray(client.menu) ?
+
+              client.menu.map((e) =>
+                <SlideShowLink type={"menu"} color={client.color} id={id} title={`menu | ${e.name}`} folderType={e.folder} />
+              )
+
+              : <SlideShowLink type={"menu"} color={client.color} id={id} title={"menu"} folderType={"menu"} />
+            }
+            {id && client.offers && <SlideShowLink type={"offers"} color={client.color} id={id} title={"offers"} folderType={"offers"} />}
+            {id && client.categories && <SlideShowLink type={"categories"} color={client.color} id={id} title={"categories"} folderType={"categories"} />}
             {client.phone &&
               <SocialCard to={`tel:${client.phone.link}`} type={"phone"} title={client.phone.name} color={client.color} />
             }
@@ -96,6 +128,9 @@ const QrCodeProfile = ({
             }
             {client.instagram &&
               <SocialCard to={client.instagram.link} type={"instagram"} color={client.color} />
+            }
+            {client.tikTok &&
+              <SocialCard to={client.tikTok.link} type={"tikTok"} color={client.color} />
             }
             {client.snapChat &&
               <SocialCard to={client.snapChat.link} type={"snapChat"} color={client.color} />

@@ -58,7 +58,7 @@
                     "+201009960086",
                     "+201144239659"
                 ],
-                "location":"https://www.google.com/maps/place/30%C2%B043'30.6%22N+31%C2%B007'19.0%22E/@30.7251701,31.1193695,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.7251701!4d31.1219444?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D",
+                "location": "https://www.google.com/maps/place/30%C2%B043'30.6%22N+31%C2%B007'19.0%22E/@30.7251701,31.1193695,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.7251701!4d31.1219444?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D",
                 "whatsApp": [
                     "+201009960086",
                     "+201144239659"
@@ -334,66 +334,27 @@
         "color": "#f46700",
         "SecondColor": "#0e406b",
         "image": "steak-burger.jpg",
-        "menuQr": true,
         "lang": "ar",
-        "social": [
-            {
-                "type": "facebook",
-                "name": "Steakburger",
-                "link": "https://www.facebook.com/Steakburger1.ye"
-            },
-            {
-                "type": "tikTok",
-                "name": "Steakburger",
-                "link": "https://www.tiktok.com/@steak.burger0?_t=8qbIRHl8Rkd&_r=1"
-            }
-        ],
-        "menu": [
-            {
-                "title": "كل الأصناف",
-                "images": [
-                    "steakBurger/page-1.png",
-                    "steakBurger/page-2.png",
-                    "steakBurger/page-3.png",
-                    "steakBurger/page-5.png",
-                    "steakBurger/page-4.png"
-                ]
-            }
-        ],
-        "offers": [
-            "steakBurger/offer-12.jpg",
-            "steakBurger/offer-11.jpg",
-            "steakBurger/offer-10.jpg",
-            "steakBurger/offer-9.jpg",
-            "steakBurger/offer-8.jpg",
-            "steakBurger/offer-7.jpg",
-            "steakBurger/offer-6.jpg",
-            "steakBurger/offer-5.jpg",
-            "steakBurger/offer-4.jpg",
-            "steakBurger/offer-3.jpeg",
-            "steakBurger/offer-2.jpeg",
-            "steakBurger/offer-1.jpeg"
-        ],
+        "facebook": {
+            "type": "facebook",
+            "name": "Steakburger",
+            "link": "https://www.facebook.com/Steakburger1.ye"
+        },
+        "tikTok": {
+            "type": "facebook",
+            "name": "Steakburger",
+            "link": "https://www.facebook.com/Steakburger1.ye"
+        },
+        "menu": true,
+        "offers": true,
         "branches": [
             {
                 "branchName": "فرع نادي الوحدة",
-                "branchInfo": [
-                    {
-                        "type": "phone",
-                        "value": "+967771375555",
-                        "link": "tel:+967771375555"
-                    },
-                    {
-                        "type": "phone",
-                        "value": "+967771372222",
-                        "link": "tel:+967771372222"
-                    },
-                    {
-                        "type": "location",
-                        "value": "المدينة السكنية مبني نادي الوحدة",
-                        "link": "https://maps.app.goo.gl/w9RmhBkVz6BDfhqH7"
-                    }
-                ]
+                "phone": [
+                    "+967771375555",
+                    "+967771372222"
+                ],
+                "location": "https://maps.app.goo.gl/w9RmhBkVz6BDfhqH7"
             }
         ]
     },
@@ -482,46 +443,21 @@
         "color": "#eb1d23",
         "SecondColor": "#badffb",
         "image": "pizza-pepo.jpg",
-        "menuQr": true,
         "lang": "ar",
-        "social": [
-            {
-                "type": "facebook",
-                "name": "pizza pepo",
-                "link": "https://www.facebook.com/Spaghttii"
-            }
-        ],
-        "menu": [
-            {
-                "title": "كل الأصناف",
-                "images": [
-                    "pizza-pepo/menu1.jpg",
-                    "pizza-pepo/menu2.jpg",
-                    "pizza-pepo/menu3.jpg"
-                ]
-            }
-        ],
-        "offers": [
-            "pizza-pepo/offer-4.jpg",
-            "pizza-pepo/offer-3.jpg",
-            "pizza-pepo/offer-2.jpg",
-            "pizza-pepo/offer-1.jpg"
-        ],
+        "facebook": {
+            "type": "facebook",
+            "name": "pizza pepo",
+            "link": "https://www.facebook.com/Spaghttii"
+        },
+        "menu": true,
+        "offers": true,
         "branches": [
             {
                 "branchName": "فرع بنها",
-                "branchInfo": [
-                    {
-                        "type": "phone",
-                        "value": "+201065222155",
-                        "link": "tel:+201065222155"
-                    },
-                    {
-                        "type": "location",
-                        "value": "شارع الاستاد خلف دونتس, Benha, Egypt",
-                        "link": "https://www.google.com/maps/place/30%C2%B028'11.8%22N+31%C2%B011'04.1%22E/@30.469944,31.1819077,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.469944!4d31.1844826?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
-                    }
-                ]
+                "phone": [
+                    "+201065222155"
+                ],
+                "location": "https://www.google.com/maps/place/30%C2%B028'11.8%22N+31%C2%B011'04.1%22E/@30.469944,31.1819077,17z/data=!3m1!4b1!4m4!3m3!8m2!3d30.469944!4d31.1844826?hl=en&entry=ttu&g_ep=EgoyMDI0MTAyOS4wIKXMDSoASAFQAw%3D%3D"
             }
         ]
     },
@@ -532,72 +468,38 @@
         "color": "#f66c3b",
         "SecondColor": "#dbb78c",
         "image": "bar-mousa.jpg",
-        "menuQr": true,
         "lang": "ar",
-        "social": [
-            {
-                "type": "facebook",
-                "name": "pizza pepo",
-                "link": "https://www.facebook.com/Spaghttii"
-            }
-        ],
+        "facebook": {
+            "type": "facebook",
+            "name": "pizza pepo",
+            "link": "https://www.facebook.com/Spaghttii"
+        },
         "menu": [
             {
-                "title": "حلو x حلو",
-                "images": [
-                    "barMousa/menu1.jpeg"
-                ]
+                "name": "Bar Mousa",
+                "folder": "barMousa"
             },
             {
-                "title": "كبدة 2 جو",
-                "images": [
-                    "barMousa/menu2.jpeg"
-                ]
+                "name": "Helw X Helw",
+                "folder": "helwXhelw"
             },
             {
-                "title": "بار موسي",
-                "images": [
-                    "barMousa/menu3.jpeg"
-                ]
+                "name": "Pizza Pepo",
+                "folder": "pizzaPepo"
             },
             {
-                "title": "بيتزا بيبو",
-                "images": [
-                    "barMousa/menu4.jpeg",
-                    "barMousa/menu5.jpeg",
-                    "barMousa/menu6.jpeg"
-                ]
+                "name": "Kebda 2 Go",
+                "folder": "kebdaToGo"
             }
         ],
-        "categories": [
-            "barMousa/category-1.jpeg",
-            "barMousa/category-2.jpeg",
-            "barMousa/category-3.jpeg",
-            "barMousa/category-4.jpeg",
-            "barMousa/category-5.jpeg",
-            "barMousa/category-6.jpeg",
-            "barMousa/category-7.jpeg",
-            "barMousa/category-8.jpeg",
-            "barMousa/category-9.jpeg",
-            "barMousa/category-10.jpeg",
-            "barMousa/category-11.jpeg",
-            "barMousa/category-12.jpeg"
-        ],
+        "categories": true,
         "branches": [
             {
                 "branchName": "فرع بنها",
-                "branchInfo": [
-                    {
-                        "type": "phone",
-                        "value": "+201287744334",
-                        "link": "tel:+201287744334"
-                    },
-                    {
-                        "type": "location",
-                        "value": "بنها المنشيه الرياح التوفيقى امام ارض المحلج",
-                        "link": "https://www.google.com/maps/dir/30.4676864,31.1820288/30.4566989,31.1874951/@30.461266,31.1725973,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D"
-                    }
-                ]
+                "phone": [
+                    "+201287744334"
+                ],
+                "location": "https://www.google.com/maps/dir/30.4676864,31.1820288/30.4566989,31.1874951/@30.461266,31.1725973,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D"
             }
         ]
     }

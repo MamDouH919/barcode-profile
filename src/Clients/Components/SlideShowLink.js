@@ -5,6 +5,7 @@ import { ArrowForward } from "@mui/icons-material";
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/fancybox.esm.js"; // Make sure Fancybox is imported properly
 import "@fancyapps/ui/dist/fancybox/fancybox.css"; // Fancybox CSS
 import { IoIosImages } from "react-icons/io";
+import { BiSolidCategoryAlt, BiSolidOffer } from "react-icons/bi";
 
 const PREFIX = "InfoQr";
 
@@ -16,14 +17,17 @@ const Root = styled("div")(({ theme }) => ({
     textDecoration: "none",
     [`& .${classes.paper}`]: {
         borderRadius: "40px",
+        cursor: "pointer"
     },
 }));
 
 const Icons = {
     menu: <IoIosImages color='grey' size={30} />,
+    offers: <BiSolidOffer color='#f44336' size={30} />,
+    categories: <BiSolidCategoryAlt color='#0088cc' size={30} />,
 };
 
-const SlideShowLink = ({ type, title, color, id, folderType }) => {
+const SlideShowLink = ({ type, title, color, id, folderType }) => {    
     const [menuImages, setMenuImages] = useState([]);
 
     // Dynamically import menu images based on `id`
@@ -37,7 +41,7 @@ const SlideShowLink = ({ type, title, color, id, folderType }) => {
                     console.error("Error loading images: ", error);
                 });
         }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [id]);
 
     const handleOpenSlideshow = () => {

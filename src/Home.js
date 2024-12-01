@@ -1,15 +1,11 @@
-import { Avatar, Box, Stack, Typography } from '@mui/material'
-import Grid from '@mui/material/Unstable_Grid2'
+import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { styled } from '@mui/material/styles';
-import ZeroWidthStack from './Item';
-import social from './social.json'
-import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+
 import clients from './clients.json';
 import otherClients from './otherClients.json';
 
 // import QRCode from "react-qr-code";
-import { FaWhatsapp } from 'react-icons/fa';
 import ProfileImage from './Clients/Components/ProfileImage';
 import QrCodeProfile from './Clients/typesOfQr/QrCodeProfile';
 
@@ -93,7 +89,7 @@ function Home(props) {
 
     return (
         <Root>
-            <QrCodeProfile client={data} hidePoweredBy/>
+            <QrCodeProfile client={data} hidePoweredBy />
             <Stack justifyContent={"center"} alignItems={"center"} spacing={2} mt={3}>
                 <Typography variant='h4'>Our Clients</Typography>
                 <Stack direction={"row"} useFlexGap spacing={3} flexWrap={"wrap"} justifyContent={"center"}>
