@@ -114,6 +114,9 @@ const QrCodeProfile = ({
             )}
             {id && client.offers && <SlideShowLink type={"offers"} color={client.color} id={id} title={"offers"} folderType={"offers"} />}
             {id && client.categories && <SlideShowLink type={"categories"} color={client.color} id={id} title={"categories"} folderType={"categories"} />}
+            {client.website &&
+              <SocialCard to={client.website.link} type={"website"} title={"website"} color={client.color} />
+            }
             {client.phone &&
               <SocialCard to={`tel:${client.phone.link}`} type={"phone"} title={client.phone.name} color={client.color} />
             }

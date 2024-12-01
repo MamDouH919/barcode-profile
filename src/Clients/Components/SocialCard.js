@@ -8,6 +8,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 import { FaXTwitter } from 'react-icons/fa6';
 import { HiUserGroup } from 'react-icons/hi';
 import { FcShare } from 'react-icons/fc';
+import { GiWorld } from 'react-icons/gi';
 
 const PREFIX = 'InfoQr';
 
@@ -42,6 +43,7 @@ const Icons = {
     youtube: <FaYoutube color='#FF0000' size={30} />,
     group: <HiUserGroup color='#1877F2' size={30} />,
     Share: <FcShare size={30} />,
+    website: <GiWorld color='grey' size={30} />,
 }
 
 const SocialCard = ({

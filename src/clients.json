@@ -11,6 +11,10 @@
             "name": "Arab Clinic Hospital - مستشفي أراب كلينيك",
             "link": "https://www.instagram.com/arabcliniceg?igsh=MWg2MzJsN3JnaDRz&utm_source=qr"
         },
+        "website": {
+            "name": "Arab Clinic Hospital - مستشفي أراب كلينيك",
+            "link": "https://arabclinic.net"
+        },
         "branches": [
             {
                 "branchName": "شبين",
@@ -500,6 +504,41 @@
                     "+201287744334"
                 ],
                 "location": "https://www.google.com/maps/dir/30.4676864,31.1820288/30.4566989,31.1874951/@30.461266,31.1725973,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0?entry=ttu&g_ep=EgoyMDI0MTExMi4wIKXMDSoASAFQAw%3D%3D"
+            }
+        ]
+    },
+    "mohamed-lashen": {
+        "name": "دكتور محمد لاشين",
+        "color": "#e0b367",
+        "image": "mohamed-lashen.jpg",
+        "facebook": {
+            "name": "ِدكتور محمد لاشين - أضحك للأسنان",
+            "link": "https://www.facebook.com/drmohamedlashen"
+        },
+        "instagram": {
+            "name": "ِدكتور محمد لاشين - أضحك للأسنان",
+            "link": "https://www.instagram.com/dr.lashen.clinic"
+        },
+        "branches": [
+            {
+                "branchName": "ناهيا",
+                "phone": [
+                    "+201117513029"
+                ],
+                "whatsApp": [
+                    "+201117513029"
+                ],
+                "location":"https://www.google.com/maps?sca_esv=53a7552d1479f08f&rlz=1CDGOYI_enEG1027EG1027&hl=en-US&sxsrf=ADLYWIIKNAnNRH428hMQPEvpxn4TO1iHIg:1733089882652&biw=1470&bih=797&dpr=2&um=1&ie=UTF-8&fb=1&gl=eg&sa=X&geocode=KYGW6XZER1gUMdF4BeMM-PfO&daddr=%D9%88%D8%B1%D8%B4%D8%A9+%D8%A7%D9%84%D8%AE%D8%B4%D8%A8-%D8%A3%D9%85%D8%A7%D9%85+%D9%85%D8%B3%D8%AC%D8%AF+%D8%A8%D9%86+%D8%B9%D8%B7%D9%8A%D8%A9+-%D8%A3%D8%B9%D9%84%D9%8A+%D8%AF%D9%83%D8%AA%D9%88%D8%B1+%D9%85%D8%AD%D9%85%D8%AF+%D8%AD%D8%B3%D9%86+%D9%84%D9%84%D8%B9%D8%B8%D8%A7%D9%85,+Nahia,+Zenein,+Kerdasa,+Giza+Governorate+12942"
+            },
+            {
+                "branchName": "قليوب",
+                "phone": [
+                    "+201061854248"
+                ],
+                "whatsApp": [
+                    "+201061854248"
+                ],
+                "location":"https://www.google.com/maps?q=30.181331634521484,31.20439338684082&z=17&hl=en"
             }
         ]
     }
