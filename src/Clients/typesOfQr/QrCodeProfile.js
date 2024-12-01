@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet';
 import SlideShowLink from '../Components/SlideShowLink';
 import PoweredBy from '../Components/PoweredBy';
 import ShareItDialog from '../Components/ShareItDialog';
-import Grid2 from '@mui/material/Unstable_Grid2';
 
 const PREFIX = 'InfoQr';
 
@@ -107,14 +106,12 @@ const QrCodeProfile = ({
             </Stack>
           }
           <Stack className={classes.contentPaper} spacing={2} component={Paper} p={2}>
-            {id && client.menu && Array.isArray(client.menu) ?
-
+            {id && client.menu && (Array.isArray(client.menu) ?
               client.menu.map((e) =>
                 <SlideShowLink type={"menu"} color={client.color} id={id} title={`menu | ${e.name}`} folderType={e.folder} />
               )
-
               : <SlideShowLink type={"menu"} color={client.color} id={id} title={"menu"} folderType={"menu"} />
-            }
+            )}
             {id && client.offers && <SlideShowLink type={"offers"} color={client.color} id={id} title={"offers"} folderType={"offers"} />}
             {id && client.categories && <SlideShowLink type={"categories"} color={client.color} id={id} title={"categories"} folderType={"categories"} />}
             {client.phone &&
