@@ -366,6 +366,7 @@
         "name": "First Medical Clinic",
         "color": "#3298c8",
         "image": "first-medical-clinic.jpg",
+        "offers": true,
         "instagram": {
             "name": "First Medical Clinic",
             "link": "https://www.instagram.com/first.medical.egypt"

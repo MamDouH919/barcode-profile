@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.7e614524.js",
+    "main.js": "/static/js/main.63a07ad1.js",
     "static/js/156.488907cf.chunk.js": "/static/js/156.488907cf.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/54.be68ced2.chunk.js": "/static/js/54.be68ced2.chunk.js",
@@ -20,13 +20,13 @@
     "static/media/menu6.jpg": "/static/media/menu6.df1c7ddd5dec03688d7f.jpg",
     "static/media/menu14.jpg": "/static/media/menu14.06577097c99a0aec6197.jpg",
     "static/media/menu12.jpg": "/static/media/menu12.29c460654c3af0ded0d1.jpg",
-    "static/media/offer-3.jpg": "/static/media/offer-3.a57145faa69a70f18ee0.jpg",
+    "static/media/offer-3.jpg": "/static/media/offer-3.3a493602167c2b94cff9.jpg",
     "static/media/abuZaid.jpg": "/static/media/abuZaid.808c34f53dc8a61d431e.jpg",
     "static/media/steak-burger.jpg": "/static/media/steak-burger.93842c1741176c9bdc2f.jpg",
     "static/media/steakBurger.jpg": "/static/media/steakBurger.93842c1741176c9bdc2f.jpg",
     "static/media/offer-4.jpg": "/static/media/offer-4.16d56c6ac582344709df.jpg",
     "static/media/menu4.png": "/static/media/menu4.d09e08df9a7f79321715.png",
-    "static/media/offer-2.jpg": "/static/media/offer-2.bdda01ca8e87cbf44812.jpg",
+    "static/media/offer-2.jpg": "/static/media/offer-2.50df79f20c4bebcd38bd.jpg",
     "static/media/iCare.jpg": "/static/media/iCare.1ed34ce35d47fca2ab0e.jpg",
     "static/media/menu2.png": "/static/media/menu2.7587e494fc6554095e80.png",
     "static/media/lasheen.jpg": "/static/media/lasheen.be6b340113aebf8a47b6.jpg",
@@ -37,6 +37,7 @@
     "static/media/menu1.png": "/static/media/menu1.e28af9345b3096927b8f.png",
     "static/media/offRoad.jpg": "/static/media/offRoad.be7fea3615b77a0bb59d.jpg",
     "static/media/category-8.jpeg": "/static/media/category-8.60ce9f4555151bdd231c.jpeg",
+    "static/media/offer-1.jpg": "/static/media/offer-1.8ff653b5c17c26848ca2.jpg",
     "static/media/category-1.jpeg": "/static/media/category-1.b844918423d3e0bd4b20.jpeg",
     "static/media/category-7.jpeg": "/static/media/category-7.9b1060cdbf02a1447f51.jpeg",
     "static/media/category-6.jpeg": "/static/media/category-6.89640ae14d87aec421b5.jpeg",
@@ -58,7 +59,6 @@
     "static/media/offer-7.jpg": "/static/media/offer-7.9e600784a7037b00b632.jpg",
     "static/media/mersaal.jpeg": "/static/media/mersaal.713cb2954978c3acdd78.jpeg",
     "static/media/offer-8.jpg": "/static/media/offer-8.af48ecb941cd9bbf952f.jpg",
-    "static/media/offer-1.jpg": "/static/media/offer-1.8ff653b5c17c26848ca2.jpg",
     "static/media/category-5.jpeg": "/static/media/category-5.46b536dab69c3855c3ed.jpeg",
     "static/media/category-10.jpeg": "/static/media/category-10.92611712dd456e9342eb.jpeg",
     "static/media/offer-3.jpeg": "/static/media/offer-3.ec750d944f40a8120c0a.jpeg",
@@ -84,13 +84,13 @@
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.7e614524.js.map": "/static/js/main.7e614524.js.map",
+    "main.63a07ad1.js.map": "/static/js/main.63a07ad1.js.map",
     "156.488907cf.chunk.js.map": "/static/js/156.488907cf.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "54.be68ced2.chunk.js.map": "/static/js/54.be68ced2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.7e614524.js"
+    "static/js/main.63a07ad1.js"
   ]
 }
