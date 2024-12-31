@@ -542,5 +542,34 @@
                 "location": "https://www.google.com/maps?q=30.181331634521484,31.20439338684082&z=17&hl=en"
             }
         ]
-    }
+    },
+    "shaebiaat-zad":{
+        "name": "shaebiaat zad",
+        "color": "#368e99",
+        "image": "shaebiaat-zad.jpeg",
+        "instagram": {
+          "name": "shaebiaat zad",
+          "link": "https://www.instagram.com/shaebiaat.zad"
+        },
+        "snapChat": {
+          "name": "shaebiaat zad",
+          "link": "https://www.snapchat.com/add/shaebiat.zad"
+        },
+        "tikTok": {
+          "name": "shaebiaat zad",
+          "link": "https://www.tiktok.com/@shaebiaat.zad"
+        },
+        "branches": [
+          {
+            "branchName": "الفيصلية الجنوبية - تبوك",
+            "phone": [
+              "+9660537000750"
+            ],
+            "location": "https://maps.app.goo.gl/1GAehsrmDKSbLbqu5",
+            "whatsApp": [
+              "+9660537000750"
+            ]
+          }
+        ]
+      }
 }
