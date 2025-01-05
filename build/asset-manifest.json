@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.9eb454ab.js",
+    "main.js": "/static/js/main.7a777618.js",
     "static/js/156.488907cf.chunk.js": "/static/js/156.488907cf.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/54.be68ced2.chunk.js": "/static/js/54.be68ced2.chunk.js",
-    "static/media/menu2.jpg": "/static/media/menu2.426aad155978a83b7afa.jpg",
+    "static/media/menu2.jpg": "/static/media/menu2.60373dfc4d6783fca84c.jpg",
     "static/media/arabprof222.jpg": "/static/media/arabprof222.938c237963de42439783.jpg",
-    "static/media/menu1.jpg": "/static/media/menu1.c91485a5828dd7273d25.jpg",
+    "static/media/menu1.jpg": "/static/media/menu1.17dacc21edd3953e0807.jpg",
     "static/media/menu5.jpg": "/static/media/menu5.311aca87d31cd5417b2e.jpg",
     "static/media/menu9.jpg": "/static/media/menu9.47a503db2bf5998008b6.jpg",
     "static/media/menu4.jpg": "/static/media/menu4.dc7336a7c28ac2b83953.jpg",
@@ -86,13 +86,13 @@
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.9eb454ab.js.map": "/static/js/main.9eb454ab.js.map",
+    "main.7a777618.js.map": "/static/js/main.7a777618.js.map",
     "156.488907cf.chunk.js.map": "/static/js/156.488907cf.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "54.be68ced2.chunk.js.map": "/static/js/54.be68ced2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.9eb454ab.js"
+    "static/js/main.7a777618.js"
   ]
 }
