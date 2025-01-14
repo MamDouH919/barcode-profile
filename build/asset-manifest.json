@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.ff9d862d.js",
+    "main.js": "/static/js/main.6f27b752.js",
     "static/js/156.488907cf.chunk.js": "/static/js/156.488907cf.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/54.be68ced2.chunk.js": "/static/js/54.be68ced2.chunk.js",
@@ -78,7 +78,7 @@
     "static/media/neveen-ali.jpg": "/static/media/neveen-ali.2b2df567f15f07830a45.jpg",
     "static/media/category-2.jpeg": "/static/media/category-2.6cbd6265ad0e848fb091.jpeg",
     "static/media/pizza-pepo.jpg": "/static/media/pizza-pepo.6907e42518b963d1712f.jpg",
-    "static/media/dr-dalia.jpeg": "/static/media/dr-dalia.13b3137d0ef1e38b69ad.jpeg",
+    "static/media/dr-dalia.jpeg": "/static/media/dr-dalia.4e91cc443938d811831a.jpeg",
     "static/media/category-4.jpeg": "/static/media/category-4.9bb556c1b8dbd4b0db9e.jpeg",
     "static/media/shaebiaat-zad.jpeg": "/static/media/shaebiaat-zad.d825c25c0ef2f44967b3.jpeg",
     "static/media/akmEgypt.jpg": "/static/media/akmEgypt.c889dda2d6cb6556edb1.jpg",
@@ -87,13 +87,13 @@
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.ff9d862d.js.map": "/static/js/main.ff9d862d.js.map",
+    "main.6f27b752.js.map": "/static/js/main.6f27b752.js.map",
     "156.488907cf.chunk.js.map": "/static/js/156.488907cf.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "54.be68ced2.chunk.js.map": "/static/js/54.be68ced2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.ff9d862d.js"
+    "static/js/main.6f27b752.js"
   ]
 }
