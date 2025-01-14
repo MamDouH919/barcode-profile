@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.cb821e25.js",
+    "main.js": "/static/js/main.70970b50.js",
     "static/js/156.488907cf.chunk.js": "/static/js/156.488907cf.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/54.be68ced2.chunk.js": "/static/js/54.be68ced2.chunk.js",
@@ -70,7 +70,7 @@
     "static/media/elshamy.jpg": "/static/media/elshamy.875af834a5818ec1f346.jpg",
     "static/media/category-12.jpeg": "/static/media/category-12.279127defc59cec0559a.jpeg",
     "static/media/category-11.jpeg": "/static/media/category-11.9ddf021bbe204e779741.jpeg",
-    "static/media/dr-dalia.jpeg": "/static/media/dr-dalia.a445bdd0ec9d5cf3cd38.jpeg",
+    "static/media/dr-dalia.jpeg": "/static/media/dr-dalia.e26733d13771a1498363.jpeg",
     "static/media/cover.webp": "/static/media/cover.f8bb887ee84d77ce839c.webp",
     "static/media/first-medical-clinic.jpg": "/static/media/first-medical-clinic.d5d42de644148aaa0d39.jpg",
     "static/media/category-3.jpeg": "/static/media/category-3.714bde7bd708df9fedc9.jpeg",
@@ -87,13 +87,13 @@
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.cb821e25.js.map": "/static/js/main.cb821e25.js.map",
+    "main.70970b50.js.map": "/static/js/main.70970b50.js.map",
     "156.488907cf.chunk.js.map": "/static/js/156.488907cf.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "54.be68ced2.chunk.js.map": "/static/js/54.be68ced2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.cb821e25.js"
+    "static/js/main.70970b50.js"
   ]
 }
