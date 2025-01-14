@@ -2,7 +2,7 @@ import React from 'react'
 import { styled } from '@mui/material/styles';
 import { Avatar, Paper, Stack, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaInstagram, FaPhoneAlt, FaSnapchatGhost, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedin, FaPhoneAlt, FaSnapchatGhost, FaTiktok, FaWhatsapp, FaYoutube } from 'react-icons/fa';
 import { ArrowForward } from '@mui/icons-material';
 import { IoLocationSharp } from 'react-icons/io5';
 import { FaXTwitter } from 'react-icons/fa6';
@@ -44,6 +44,7 @@ const Icons = {
     group: <HiUserGroup color='#1877F2' size={30} />,
     Share: <FcShare size={30} />,
     website: <GiWorld color='grey' size={30} />,
+    linkedin: <FaLinkedin color='#1877F2' size={30} />,
 }
 
 const SocialCard = ({

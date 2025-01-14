@@ -543,34 +543,67 @@
             }
         ]
     },
-    "shaebiaat-zad":{
+    "shaebiaat-zad": {
         "name": "shaebiaat zad",
         "color": "#368e99",
         "image": "shaebiaat-zad.jpeg",
         "menu": true,
         "instagram": {
-          "name": "shaebiaat zad",
-          "link": "https://www.instagram.com/shaebiaat.zad"
+            "name": "shaebiaat zad",
+            "link": "https://www.instagram.com/shaebiaat.zad"
         },
         "snapChat": {
-          "name": "shaebiaat zad",
-          "link": "https://www.snapchat.com/add/shaebiat.zad"
+            "name": "shaebiaat zad",
+            "link": "https://www.snapchat.com/add/shaebiat.zad"
         },
         "tikTok": {
-          "name": "shaebiaat zad",
-          "link": "https://www.tiktok.com/@shaebiaat.zad"
+            "name": "shaebiaat zad",
+            "link": "https://www.tiktok.com/@shaebiaat.zad"
         },
         "branches": [
-          {
-            "branchName": "تبوك / العليا",
-            "phone": [
-              "+9660537000750"
-            ],
-            "location": "https://maps.app.goo.gl/1GAehsrmDKSbLbqu5",
-            "whatsApp": [
-              "+9660537000750"
-            ]
-          }
+            {
+                "branchName": "تبوك / العليا",
+                "phone": [
+                    "+9660537000750"
+                ],
+                "location": "https://maps.app.goo.gl/1GAehsrmDKSbLbqu5",
+                "whatsApp": [
+                    "+9660537000750"
+                ]
+            }
         ]
-      }
+    },
+    "dr-dalia": {
+        "name": "Dr. Dalia A.abdulrahman (Green Growth)",
+        "color": "#28ac75",
+        "image": "dr-dalia.jpeg",
+        "facebook": {
+            "name": "Dr. Dalia A.abdulrahman",
+            "link": "https://www.facebook.com/greengrowtheg"
+        },
+        "tikTok": {
+            "name": "Dr. Dalia A.abdulrahman",
+            "link": "https://www.tiktok.com/@drdaliagreengrowth"
+        },
+        "website": {
+            "name": "Dr. Dalia A.abdulrahman",
+            "link": "https://drdalia-childshub.com/"
+        },
+        "linkedin": {
+            "name": "Dr. Dalia A.abdulrahman",
+            "link": "https://www.linkedin.com/in/prof-dalia-a-abdulrahman-0475403a/"
+        },
+        "branches": [
+            {
+                "branchName": "التجمع الخامس",
+                "phone": [
+                    "+201067710688"
+                ],
+                "location": "https://maps.app.goo.gl/FYsTXYBG8W5kk4ZN8",
+                "whatsApp": [
+                    "+201067710688"
+                ]
+            }
+        ]
+    }
 }

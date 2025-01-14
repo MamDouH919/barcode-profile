@@ -132,6 +132,9 @@ const QrCodeProfile = ({
             {client.tikTok &&
               <SocialCard to={client.tikTok.link} type={"tikTok"} color={client.color} />
             }
+            {client.linkedin &&
+              <SocialCard to={client.linkedin.link} type={"linkedin"} color={client.color} />
+            }
             {client.snapChat &&
               <SocialCard to={client.snapChat.link} type={"snapChat"} color={client.color} />
             }
