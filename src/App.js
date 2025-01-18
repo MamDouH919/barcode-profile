@@ -111,10 +111,8 @@ export default function App() {
     },
   });
 
-  console.log(window.location.hostname);
-
   // const isProduction = window.location.hostname.includes("localhost");
-  const isArabClinic = window.location.hostname.includes("/qr.arabclinic.net/");
+  const isArabClinic = window.location.hostname.includes("qr.arabclinic.net");
 
   return (
     <ThemeProvider
