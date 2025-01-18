@@ -62,14 +62,12 @@ const Root = styled(Stack)(({ theme }) => ({
 const QrCodeProfile = ({
   client,
   id,
-  hidePoweredBy
+  hidePoweredBy,
+  haveDomain = false
 }) => {
   const [open, setOpen] = useState(false)
   const handleClose = () => setOpen(false)
   const handleOpen = () => setOpen(true)
-
-  console.log(id);
-
 
   return (
     <Root>
@@ -83,7 +81,7 @@ const QrCodeProfile = ({
         />
       }
       <Helmet>
-        <title>Mountain | {client.name}</title>
+        {haveDomain ? <title>{client.name}</title> : <title>Mountain | {client.name}</title>}
       </Helmet>
       <Stack className={classes.page} alignItems={"center"}>
         <Box className={classes.cover} sx={{ backgroundImage: `url(${require(`../../imgs/${client.image}`)})`, }} />
@@ -123,9 +121,7 @@ const QrCodeProfile = ({
             {client.whatsApp &&
               <SocialCard to={`https://wa.me/${client.whatsApp.link}`} type={"whatsApp"} title={client.whatsApp.name} color={client.color} />
             }
-            {client.whatsAppGroup &&
-              <SocialCard to={`${client.whatsAppGroup.link}`} type={"whatsApp"} title={client.whatsAppGroup.name} color={client.color} />
-            }
+
             {client.facebook &&
               <SocialCard to={client.facebook.link} type={"facebook"} color={client.color} />
             }
@@ -150,6 +146,9 @@ const QrCodeProfile = ({
             {client.fbGroup && client.fbGroup.map((item, index) =>
               <SocialCard to={item.link} type={"group"} title={item.name} color={client.color} key={index} />
             )}
+            {client.whatsAppGroup &&
+              <SocialCard to={`${client.whatsAppGroup.link}`} type={"whatsApp"} title={client.whatsAppGroup.name} color={client.color} />
+            }
             {client.branches && client.branches.map((branch, i) =>
               <BranchData key={i} branch={branch} color={client.color} />
             )}
