@@ -123,6 +123,9 @@ const QrCodeProfile = ({
             {client.whatsApp &&
               <SocialCard to={`https://wa.me/${client.whatsApp.link}`} type={"whatsApp"} title={client.whatsApp.name} color={client.color} />
             }
+            {client.whatsAppGroup &&
+              <SocialCard to={`${client.whatsAppGroup.link}`} type={"whatsApp"} title={client.whatsAppGroup.name} color={client.color} />
+            }
             {client.facebook &&
               <SocialCard to={client.facebook.link} type={"facebook"} color={client.color} />
             }

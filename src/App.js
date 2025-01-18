@@ -111,6 +111,11 @@ export default function App() {
     },
   });
 
+  console.log(window.location.hostname);
+
+  // const isProduction = window.location.hostname.includes("localhost");
+  const isArabClinic = window.location.hostname.includes("/qr.arabclinic.net/");
+
   return (
     <ThemeProvider
       theme={theme}
@@ -118,8 +123,9 @@ export default function App() {
       <CssBaseline />
       <Routes>
         <Route path="/" element={<Outlet></Outlet>}>
-          <Route index element={<Home />} />
-          <Route index path=":id" element={<Clients />} />
+          {!isArabClinic && <Route index element={<Home />} />}
+          {!isArabClinic && <Route index path=":id" element={<Clients />} />}
+          {isArabClinic && <Route index element={<Clients idDomain={"arab-clinic"} />} />}
         </Route>
         <Route path="*" element={<NotFound />} />
       </Routes>

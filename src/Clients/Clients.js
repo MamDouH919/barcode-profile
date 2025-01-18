@@ -5,9 +5,11 @@ import NotFound from '../NotFound';
 import MenuQr from './typesOfQr/MenuQr';
 import QrCodeProfile from './typesOfQr/QrCodeProfile';
 
-function Clients() {
+function Clients({ idDomain }) {
+    console.log(idDomain);
+    
     const { id } = useParams()
-    const client = clients[id]
+    const client = clients[id ?? idDomain]
 
 
     if (!client || client.disable) return <NotFound />
