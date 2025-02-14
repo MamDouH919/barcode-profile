@@ -499,6 +499,10 @@
             {
                 "name": "Kebda 2 Go",
                 "folder": "kebdaToGo"
+            },
+            {
+                "name": "shawaya",
+                "folder": "shawaya"
             }
         ],
         "categories": true,
