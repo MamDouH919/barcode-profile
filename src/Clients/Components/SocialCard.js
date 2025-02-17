@@ -9,6 +9,7 @@ import { FaXTwitter } from 'react-icons/fa6';
 import { HiUserGroup } from 'react-icons/hi';
 import { FcShare } from 'react-icons/fc';
 import { GiWorld } from 'react-icons/gi';
+import InstaPay from '../../imgs/instaPay.webp';
 
 const PREFIX = 'InfoQr';
 
@@ -45,6 +46,7 @@ const Icons = {
     Share: <FcShare size={30} />,
     website: <GiWorld color='grey' size={30} />,
     linkedin: <FaLinkedin color='#1877F2' size={30} />,
+    instaPay: <img src={InstaPay} alt='instaPay' width={30} height={30} />,
 }
 
 const SocialCard = ({

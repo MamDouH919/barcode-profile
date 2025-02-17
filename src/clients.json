@@ -584,7 +584,9 @@
     "dr-dalia": {
         "name": "Dr. Dalia A.abdulrahman (Green Growth)",
         "color": "#28ac75",
-        "image": "dr-dalia.jpeg",
+        "bg-image": "dr-dalia.jpeg",
+        "image": "dr-dalia-bg.jpeg",
+        "customComp": "DrDalia",
         "facebook": {
             "name": "Dr. Dalia A.abdulrahman",
             "link": "https://www.facebook.com/greengrowtheg"
@@ -608,6 +610,14 @@
         "instagram": {
             "name": "Dr. Dalia A.abdulrahman",
             "link": "https://www.instagram.com/greengrowtheg"
+        },
+        "instaPay": {
+            "name": "طريقة الدفع",
+            "link": "https://ipn.eg/S/drdalia2811/instapay/57Y207"
+        },
+        "consultation": {
+            "name": "الأستشارة الاونلاين",
+            "link": "https://wa.me/+201067710688"
         },
         "branches": [
             {

@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.23ab64c1.js",
-    "static/js/156.c1bf4a2e.chunk.js": "/static/js/156.c1bf4a2e.chunk.js",
+    "main.js": "/static/js/main.dd740915.js",
+    "static/js/695.ba893d47.chunk.js": "/static/js/695.ba893d47.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
+    "static/js/262.058d028c.chunk.js": "/static/js/262.058d028c.chunk.js",
     "static/js/54.be68ced2.chunk.js": "/static/js/54.be68ced2.chunk.js",
     "static/media/menu2.jpg": "/static/media/menu2.60373dfc4d6783fca84c.jpg",
     "static/media/arabprof222.jpg": "/static/media/arabprof222.938c237963de42439783.jpg",
@@ -61,6 +62,7 @@
     "static/media/mersaal.jpeg": "/static/media/mersaal.713cb2954978c3acdd78.jpeg",
     "static/media/offer-8.jpg": "/static/media/offer-8.af48ecb941cd9bbf952f.jpg",
     "static/media/category-5.jpeg": "/static/media/category-5.46b536dab69c3855c3ed.jpeg",
+    "static/media/dr-dalia-bg.jpeg": "/static/media/dr-dalia-bg.f636e85e03d9886f154e.jpeg",
     "static/media/category-10.jpeg": "/static/media/category-10.92611712dd456e9342eb.jpeg",
     "static/media/offer-3.jpeg": "/static/media/offer-3.ec750d944f40a8120c0a.jpeg",
     "static/media/jeep.jpg": "/static/media/jeep.93aabd85e6e66a5e7ebc.jpg",
@@ -85,15 +87,17 @@
     "static/media/iSmile.jpg": "/static/media/iSmile.2c9fdcf2578f29b3b07b.jpg",
     "static/media/3baky.jpg": "/static/media/3baky.1fb00b29cd3c68f5b417.jpg",
     "static/media/bar-mousa.jpg": "/static/media/bar-mousa.829ea9156ea2ece9bfda.jpg",
+    "static/media/instaPay.webp": "/static/media/instaPay.0b708dd8a2b3d9cb4d41.webp",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.23ab64c1.js.map": "/static/js/main.23ab64c1.js.map",
-    "156.c1bf4a2e.chunk.js.map": "/static/js/156.c1bf4a2e.chunk.js.map",
+    "main.dd740915.js.map": "/static/js/main.dd740915.js.map",
+    "695.ba893d47.chunk.js.map": "/static/js/695.ba893d47.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
+    "262.058d028c.chunk.js.map": "/static/js/262.058d028c.chunk.js.map",
     "54.be68ced2.chunk.js.map": "/static/js/54.be68ced2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.23ab64c1.js"
+    "static/js/main.dd740915.js"
   ]
 }
