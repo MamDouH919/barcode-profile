@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.dd740915.js",
-    "static/js/695.ba893d47.chunk.js": "/static/js/695.ba893d47.chunk.js",
+    "main.js": "/static/js/main.b2dc97ea.js",
+    "static/js/695.6ee97eee.chunk.js": "/static/js/695.6ee97eee.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/262.058d028c.chunk.js": "/static/js/262.058d028c.chunk.js",
     "static/js/54.be68ced2.chunk.js": "/static/js/54.be68ced2.chunk.js",
@@ -90,14 +90,14 @@
     "static/media/instaPay.webp": "/static/media/instaPay.0b708dd8a2b3d9cb4d41.webp",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.dd740915.js.map": "/static/js/main.dd740915.js.map",
-    "695.ba893d47.chunk.js.map": "/static/js/695.ba893d47.chunk.js.map",
+    "main.b2dc97ea.js.map": "/static/js/main.b2dc97ea.js.map",
+    "695.6ee97eee.chunk.js.map": "/static/js/695.6ee97eee.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "262.058d028c.chunk.js.map": "/static/js/262.058d028c.chunk.js.map",
     "54.be68ced2.chunk.js.map": "/static/js/54.be68ced2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.dd740915.js"
+    "static/js/main.b2dc97ea.js"
   ]
 }
