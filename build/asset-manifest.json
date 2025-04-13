@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.5514abf2.js",
+    "main.js": "/static/js/main.00cc03a3.js",
     "static/js/695.ba893d47.chunk.js": "/static/js/695.ba893d47.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/262.058d028c.chunk.js": "/static/js/262.058d028c.chunk.js",
@@ -39,7 +39,7 @@
     "static/media/category-8.jpeg": "/static/media/category-8.60ce9f4555151bdd231c.jpeg",
     "static/media/offer-3.jpg": "/static/media/offer-3.3a493602167c2b94cff9.jpg",
     "static/media/offer-1.jpg": "/static/media/offer-1.332a3928d5afdab7a040.jpg",
-    "static/media/menu1.jpeg": "/static/media/menu1.fa1116053c161a3d5bf1.jpeg",
+    "static/media/menu1.jpeg": "/static/media/menu1.693783627bb19dc8da59.jpeg",
     "static/media/category-1.jpeg": "/static/media/category-1.b844918423d3e0bd4b20.jpeg",
     "static/media/category-7.jpeg": "/static/media/category-7.9b1060cdbf02a1447f51.jpeg",
     "static/media/menu2.jpeg": "/static/media/menu2.03d3e729dea1dddc18ca.jpeg",
@@ -89,7 +89,7 @@
     "static/media/instaPay.webp": "/static/media/instaPay.0b708dd8a2b3d9cb4d41.webp",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.5514abf2.js.map": "/static/js/main.5514abf2.js.map",
+    "main.00cc03a3.js.map": "/static/js/main.00cc03a3.js.map",
     "695.ba893d47.chunk.js.map": "/static/js/695.ba893d47.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "262.058d028c.chunk.js.map": "/static/js/262.058d028c.chunk.js.map",
@@ -97,6 +97,6 @@
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.5514abf2.js"
+    "static/js/main.00cc03a3.js"
   ]
 }
