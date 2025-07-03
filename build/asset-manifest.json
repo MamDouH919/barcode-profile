@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.9dc8844b.js",
+    "main.js": "/static/js/main.c6216185.js",
     "static/js/695.ba893d47.chunk.js": "/static/js/695.ba893d47.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/262.058d028c.chunk.js": "/static/js/262.058d028c.chunk.js",
@@ -78,6 +78,7 @@
     "static/media/Fayek-Philip.jpg": "/static/media/Fayek-Philip.cd727d4f4755a0614f80.jpg",
     "static/media/warsha.jpg": "/static/media/warsha.f2b876c92f88c50ac2ba.jpg",
     "static/media/neveen-ali.jpg": "/static/media/neveen-ali.2b2df567f15f07830a45.jpg",
+    "static/media/guzel.jpeg": "/static/media/guzel.ff045df7e040aa7e6cbd.jpeg",
     "static/media/category-2.jpeg": "/static/media/category-2.6cbd6265ad0e848fb091.jpeg",
     "static/media/pizza-pepo.jpg": "/static/media/pizza-pepo.6907e42518b963d1712f.jpg",
     "static/media/category-4.jpeg": "/static/media/category-4.9bb556c1b8dbd4b0db9e.jpeg",
@@ -89,7 +90,7 @@
     "static/media/instaPay.webp": "/static/media/instaPay.0b708dd8a2b3d9cb4d41.webp",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.9dc8844b.js.map": "/static/js/main.9dc8844b.js.map",
+    "main.c6216185.js.map": "/static/js/main.c6216185.js.map",
     "695.ba893d47.chunk.js.map": "/static/js/695.ba893d47.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "262.058d028c.chunk.js.map": "/static/js/262.058d028c.chunk.js.map",
@@ -97,6 +98,6 @@
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.9dc8844b.js"
+    "static/js/main.c6216185.js"
   ]
 }

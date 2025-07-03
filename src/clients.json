@@ -632,5 +632,18 @@
                 ]
             }
         ]
+    },
+    "guzel": {
+        "name": "guzel",
+        "color": "#bf469d",
+        "image": "guzel.jpeg",
+        "facebook": {
+            "name": "ِguzel",
+            "link": "https://www.facebook.com/profile.php?id=61569072940778"
+        },
+
+        "branches": [
+            
+        ]
     }
 }
