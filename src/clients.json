@@ -452,14 +452,23 @@
         "hashtag": "#pizzaPepo",
         "color": "#eb1d23",
         "SecondColor": "#badffb",
-        "image": "pizza-pepo.jpg",
+        "image": "pizza-pepo.jpeg",
         "lang": "ar",
         "facebook": {
             "type": "facebook",
             "name": "pizza pepo",
             "link": "https://www.facebook.com/Spaghttii"
         },
-        "menu": true,
+        "menu": [
+            {
+                "name": "Pizza Pepo",
+                "folder": "menu"
+            },
+            {
+                "name": "Bar Mousa",
+                "folder": "barMousa"
+            }
+        ],
         "offers": true,
         "branches": [
             {
@@ -649,9 +658,6 @@
             "name": "ِguzel",
             "link": "https://www.instagram.com/guz_e1441?igsh=bzlpZmVhN3h1ZDB5"
         },
-
-        "branches": [
-            
-        ]
+        "branches": []
     }
 }
