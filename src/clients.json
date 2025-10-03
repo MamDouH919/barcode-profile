@@ -659,5 +659,37 @@
             "link": "https://www.instagram.com/guz_e1441?igsh=bzlpZmVhN3h1ZDB5"
         },
         "branches": []
+    },
+    "dr-coffee": {
+        "key": "dr-coffee",
+        "name": "بن الدكتور",
+        "hashtag": "#DrCoffee",
+        "color": "#dcc556",
+        "SecondColor": "#181818",
+        "image": "dr-coffee.jpg",
+        "lang": "ar",
+        "facebook": {
+            "type": "facebook",
+            "name": "بن الدكتور",
+            "link": "https://facebook.com/profile.php?id=61561819045371"
+        },
+        "instagram": {
+            "type": "instagram",
+            "name": "بن الدكتور",
+            "link": "https://www.instagram.com/coffeedoctor2025/"
+        },
+        "branches": [
+            {
+                "branchName": "فرع مدينة نصر",
+                "phone": [
+                    "+201508219873",
+                    "+201508319872",
+                    "+201003333445"
+                ],
+                "whatsApp": [
+                    "+201003333445"
+                ]
+            }
+        ]
     }
 }

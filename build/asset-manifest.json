@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.e71aea21.js",
+    "main.js": "/static/js/main.00502299.js",
     "static/js/695.ba893d47.chunk.js": "/static/js/695.ba893d47.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/262.058d028c.chunk.js": "/static/js/262.058d028c.chunk.js",
@@ -26,6 +26,7 @@
     "static/media/steak-burger.jpg": "/static/media/steak-burger.93842c1741176c9bdc2f.jpg",
     "static/media/steakBurger.jpg": "/static/media/steakBurger.93842c1741176c9bdc2f.jpg",
     "static/media/menu1.jpeg": "/static/media/menu1.693783627bb19dc8da59.jpeg",
+    "static/media/dr-coffee.jpg": "/static/media/dr-coffee.4161395217c035d0f16a.jpg",
     "static/media/menu4.png": "/static/media/menu4.d09e08df9a7f79321715.png",
     "static/media/iCare.jpg": "/static/media/iCare.1ed34ce35d47fca2ab0e.jpg",
     "static/media/menu2.png": "/static/media/menu2.7587e494fc6554095e80.png",
@@ -98,7 +99,7 @@
     "static/media/instaPay.webp": "/static/media/instaPay.0b708dd8a2b3d9cb4d41.webp",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.e71aea21.js.map": "/static/js/main.e71aea21.js.map",
+    "main.00502299.js.map": "/static/js/main.00502299.js.map",
     "695.ba893d47.chunk.js.map": "/static/js/695.ba893d47.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "262.058d028c.chunk.js.map": "/static/js/262.058d028c.chunk.js.map",
@@ -106,6 +107,6 @@
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.e71aea21.js"
+    "static/js/main.00502299.js"
   ]
 }
