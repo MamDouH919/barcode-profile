@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2fdb75a2.css",
-    "main.js": "/static/js/main.ef3720ec.js",
+    "main.js": "/static/js/main.caeef285.js",
     "static/js/695.ba893d47.chunk.js": "/static/js/695.ba893d47.chunk.js",
     "static/js/453.35ea36f6.chunk.js": "/static/js/453.35ea36f6.chunk.js",
     "static/js/262.058d028c.chunk.js": "/static/js/262.058d028c.chunk.js",
@@ -21,7 +21,7 @@
     "static/media/menu6.jpg": "/static/media/menu6.ffa8afecce33c1c44ec5.jpg",
     "static/media/menu14.jpg": "/static/media/menu14.860976e8e7bf746f7b52.jpg",
     "static/media/menu12.jpg": "/static/media/menu12.65fa16eddafbb172cae8.jpg",
-    "static/media/menu2.jpeg": "/static/media/menu2.77005c6858400e2766f7.jpeg",
+    "static/media/menu2.jpeg": "/static/media/menu2.410e874b5cea756fd01e.jpeg",
     "static/media/abuZaid.jpg": "/static/media/abuZaid.808c34f53dc8a61d431e.jpg",
     "static/media/steak-burger.jpg": "/static/media/steak-burger.93842c1741176c9bdc2f.jpg",
     "static/media/steakBurger.jpg": "/static/media/steakBurger.93842c1741176c9bdc2f.jpg",
@@ -36,6 +36,7 @@
     "static/media/menu5.png": "/static/media/menu5.4398d739ef6333bbb174.png",
     "static/media/menu3.png": "/static/media/menu3.a9387ee554ab9a6055cb.png",
     "static/media/menu1.png": "/static/media/menu1.e28af9345b3096927b8f.png",
+    "static/media/elite-bridge.webp": "/static/media/elite-bridge.b4446d1239408db93cc9.webp",
     "static/media/offRoad.jpg": "/static/media/offRoad.be7fea3615b77a0bb59d.jpg",
     "static/media/offer1.jpeg": "/static/media/offer1.95e2b4bd31114326ba41.jpeg",
     "static/media/offer-2.jpg": "/static/media/offer-2.50df79f20c4bebcd38bd.jpg",
@@ -99,7 +100,7 @@
     "static/media/instaPay.webp": "/static/media/instaPay.0b708dd8a2b3d9cb4d41.webp",
     "index.html": "/index.html",
     "main.2fdb75a2.css.map": "/static/css/main.2fdb75a2.css.map",
-    "main.ef3720ec.js.map": "/static/js/main.ef3720ec.js.map",
+    "main.caeef285.js.map": "/static/js/main.caeef285.js.map",
     "695.ba893d47.chunk.js.map": "/static/js/695.ba893d47.chunk.js.map",
     "453.35ea36f6.chunk.js.map": "/static/js/453.35ea36f6.chunk.js.map",
     "262.058d028c.chunk.js.map": "/static/js/262.058d028c.chunk.js.map",
@@ -107,6 +108,6 @@
   },
   "entrypoints": [
     "static/css/main.2fdb75a2.css",
-    "static/js/main.ef3720ec.js"
+    "static/js/main.caeef285.js"
   ]
 }

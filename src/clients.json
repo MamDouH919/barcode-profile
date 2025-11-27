@@ -691,6 +691,17 @@
                     "+201003333445"
                 ]
             }
-        ]
+        ],
+        "menu": true
+    },
+    "elite-bridge": {
+        "key": "elite-bridge",
+        "createdAt": "2025-10-03",
+        "name": "Elite Bridge",
+        "hashtag": "#EliteBridge",
+        "color": "#b48a34",
+        "SecondColor": "#000",
+        "image": "elite-bridge.webp",
+        "lang": "en"
     }
 }
